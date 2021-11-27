@@ -19,7 +19,7 @@ def download_quarterly_oecd_data(url, directory):
     driver.find_element_by_xpath("//span[@class='download-btn-label']").click()
     driver.find_element_by_xpath("//li/a[@class='download-indicator-button']").click()
 
-    time.sleep(10)
+    time.sleep(30)
     driver.close()
 
 def reshape_bs4(table, ncols):
