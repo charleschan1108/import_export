@@ -1,0 +1,161 @@
+Country,Last,Previous,Reference,Unit
+Algeria,-1.1,0.5,Jun/21,%
+Togo,-1.1,-0.7,Sep/21,%
+Malta,-0.7,-0.9,Oct/21,%
+Afghanistan,-0.6,0.99,Jun/21,%
+Niger,-0.4,1.1,Mar/21,%
+Benin,-0.3,1.2,Oct/21,%
+Japan,-0.3,0.4,Oct/21,%
+Norway,-0.3,1,Oct/21,%
+Bolivia,-0.23,-0.2,Oct/21,%
+Somalia,-0.23,0.73,Oct/21,%
+Estonia,-0.2,1.2,Oct/21,%
+New Caledonia,-0.2,0.03,Oct/21,%
+Vietnam,-0.2,-0.62,Oct/21,%
+Seychelles,-0.19,0.16,Sep/21,%
+Bahamas,-0.1,0.5,Jun/21,%
+Ethiopia,-0.1,4,Oct/21,%
+Rwanda,-0.1,0.2,Oct/21,%
+Tanzania,-0.1,-0.1,Oct/21,%
+Taiwan,-0.06,0.51,Oct/21,%
+Cambodia,0,-0.05,Sep/21,%
+Colombia,0.01,0.38,Oct/21,%
+Macau,0.02,0.2,Oct/21,%
+Jordan,0.06,0.18,Oct/21,%
+Bahrain,0.1,0.1,Aug/21,%
+Israel,0.1,0.2,Oct/21,%
+South Korea,0.1,0.5,Oct/21,%
+Vanuatu,0.1,-0.5,Jun/21,%
+Indonesia,0.12,-0.04,Oct/21,%
+United Arab Emirates,0.12,0.43,Sep/21,%
+Congo,0.18,1.24,Feb/21,%
+Namibia,0.19,0.35,Oct/21,%
+Brunei,0.2,-0.2,Aug/21,%
+Burkina Faso,0.2,1.7,Oct/21,%
+Guinea,0.2,0.2,Oct/21,%
+Kyrgyzstan,0.2,-0.7,Sep/21,%
+Mauritania,0.2,0.7,Oct/21,%
+Panama,0.2,0,Sep/21,%
+Philippines,0.2,0,Oct/21,%
+Saudi Arabia,0.2,0.2,Oct/21,%
+South Africa,0.2,0.2,Oct/21,%
+Sweden,0.2,0.5,Oct/21,%
+Ecuador,0.21,0.02,Oct/21,%
+Faroe Islands,0.24,1.1,Sep/21,%
+Nicaragua,0.24,0.35,Aug/21,%
+Libya,0.25,0.1,Jun/21,%
+Bhutan,0.26,0.23,Sep/21,%
+Aruba,0.3,0.5,Aug/21,%
+Ivory Coast,0.3,-0.1,Oct/21,%
+Mali,0.3,2.7,Oct/21,%
+Puerto Rico,0.3,0.4,Sep/21,%
+Senegal,0.3,0.6,Oct/21,%
+Singapore,0.3,0.4,Oct/21,%
+Switzerland,0.3,0,Oct/21,%
+Guatemala,0.36,0.21,Oct/21,%
+Madagascar,0.36,0.4,Sep/21,%
+Fiji,0.4,-0.1,Aug/21,%
+France,0.4,-0.2,Oct/21,%
+Iceland,0.4,0.6,Nov/21,%
+Lesotho,0.4,0.4,Sep/21,%
+Tajikistan,0.4,0.5,Sep/21,%
+Dominican Republic,0.45,0.8,Sep/21,%
+Costa Rica,0.49,0.63,Oct/21,%
+Albania,0.5,0.4,Sep/21,%
+Germany,0.5,0,Oct/21,%
+Kuwait,0.5,0.34,Jun/21,%
+Laos,0.5,0.6,Sep/21,%
+Macedonia,0.5,-0.1,Oct/21,%
+Mauritius,0.5,0.1,Oct/21,%
+Mongolia,0.5,0.3,Oct/21,%
+Portugal,0.5,0.9,Oct/21,%
+Kenya,0.51,0.32,Oct/21,%
+Honduras,0.53,0.45,Oct/21,%
+Peru,0.58,0.4,Oct/21,%
+Austria,0.6,0.5,Oct/21,%
+Belize,0.6,0.4,Aug/21,%
+Burundi,0.6,0.5,Sep/21,%
+Ghana,0.6,0.3,Sep/21,%
+Slovakia,0.6,0.8,Oct/21,%
+Uganda,0.6,0,Sep/21,%
+Zambia,0.6,0.4,Nov/21,%
+Armenia,0.7,-0.1,Oct/21,%
+Canada,0.7,0.2,Oct/21,%
+China,0.7,0,Oct/21,%
+Cyprus,0.7,-0.1,Oct/21,%
+East Timor,0.7,0.1,Oct/21,%
+El Salvador,0.7,0.4,Oct/21,%
+Ireland,0.7,0.5,Oct/21,%
+Italy,0.7,-0.2,Oct/21,%
+Kazakhstan,0.7,0.4,Oct/21,%
+Malaysia,0.7,0.2,Oct/21,%
+Montenegro,0.7,0.5,Oct/21,%
+Morocco,0.7,0.7,Oct/21,%
+Thailand,0.74,1.59,Oct/21,%
+Oman,0.75,-0.06,Oct/21,%
+Australia,0.8,0.8,Sep/21,%
+Euro Area,0.8,0.5,Oct/21,%
+Finland,0.8,0.3,Oct/21,%
+Guyana,0.8,3.2,Jul/21,%
+Mexico,0.84,0.62,Oct/21,%
+Myanmar,0.88,0.85,Jul/21,%
+Mozambique,0.89,0.73,Oct/21,%
+Belarus,0.9,1.3,Oct/21,%
+Botswana,0.9,0.5,Oct/21,%
+Denmark,0.9,0.3,Oct/21,%
+European Union,0.9,0.5,Oct/21,%
+Luxembourg,0.9,0.15,Oct/21,%
+Serbia,0.9,0.8,Oct/21,%
+Slovenia,0.9,-0.1,Oct/21,%
+Tunisia,0.9,0.6,Oct/21,%
+Ukraine,0.9,1.2,Oct/21,%
+United States,0.9,0.4,Oct/21,%
+Nigeria,0.98,1.15,Oct/21,%
+Cape Verde,1,0.3,Oct/21,%
+Croatia,1,1,Oct/21,%
+Czech Republic,1,0.2,Oct/21,%
+Kosovo,1,0.1,Oct/21,%
+Uruguay,1.04,0.46,Oct/21,%
+Egypt,1.1,0.1,Sep/21,%
+Gambia,1.1,0.4,Oct/21,%
+Hungary,1.1,0.2,Oct/21,%
+Latvia,1.1,1.1,Oct/21,%
+Poland,1.1,0.7,Oct/21,%
+United Kingdom,1.1,0.3,Oct/21,%
+Russia,1.11,0.6,Oct/21,%
+Liberia,1.16,6.13,Aug/21,%
+Sierra Leone,1.2,2.2,Sep/21,%
+Sao Tome And Principe,1.23,2,Sep/21,%
+Brazil,1.25,1.16,Oct/21,%
+Chile,1.3,1.2,Oct/21,%
+Georgia,1.3,0.2,Oct/21,%
+Netherlands,1.3,0.1,Oct/21,%
+Suriname,1.3,2.2,Sep/21,%
+Uzbekistan,1.3,1.1,Oct/21,%
+Qatar,1.34,0.03,Oct/21,%
+India,1.41,0.18,Oct/21,%
+Belgium,1.47,-0.25,Oct/21,%
+Greece,1.5,2.1,Oct/21,%
+Azerbaijan,1.6,1.8,Oct/21,%
+Paraguay,1.6,1,Oct/21,%
+Lithuania,1.7,1.4,Oct/21,%
+Romania,1.78,0.95,Oct/21,%
+Bulgaria,1.8,0,Oct/21,%
+Spain,1.8,0.8,Oct/21,%
+Pakistan,1.9,2.12,Oct/21,%
+Sri Lanka,1.9,0.4,Oct/21,%
+Bosnia And Herzegovina,2,0.8,Oct/21,%
+Haiti,2,1.2,Jul/21,%
+Angola,2.06,2.18,Oct/21,%
+Moldova,2.1,1.7,Oct/21,%
+Bangladesh,2.18,1.5,Sep/21,%
+New Zealand,2.2,1.3,Sep/21,%
+Jamaica,2.3,0.9,Sep/21,%
+Turkey,2.39,1.25,Oct/21,%
+Hong Kong,2.8,-2.3,Oct/21,%
+Argentina,3.5,3.5,Oct/21,%
+Iran,3.7,3.9,Oct/21,%
+Zimbabwe,5.8,6.4,Nov/21,%
+Venezuela,6.8,7.1,Oct/21,%
+South Sudan,9.72,2.44,Oct/21,%
+Lebanon,16.42,8.16,Oct/21,%
