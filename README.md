@@ -144,3 +144,19 @@ For more details, you can use the following command:
 ```
 python main.py -h
 ```
+
+## Package Logic
+
+This package consists of 3 parts:
+1. Data ingestion to crawl raw data
+2. Data process to massage data
+3. Application
+
+### Data ingestion
+All the crawlers are stored in the data_ingestion module. They will crawl the designated data from the specified websites and stored into the data directory.
+
+### Data process
+All the data processors are stored in the data_process module. They will process the raw data according to the logic specified and save the output at the insights directory.
+
+### Application
+Provide users with API to interact with the insights uncovered in the previous part.
