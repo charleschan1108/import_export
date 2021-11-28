@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
-from utils import get_latest_file
+
+from .utils import assign_rank
+from .utils import get_latest_file
+from .utils import get_country_iso_code
 
 def get_rate_of_change(df, measure, verbose = False):
     pivot = df.pivot(index = "TIME", columns = "LOCATION", values = "Value")
@@ -25,8 +28,8 @@ def get_rate_of_change(df, measure, verbose = False):
 
     return chg
 
-if __name__ == "__main__":
-    directory = "../data/trade"
+def process_trade(home_dir):
+    directory = f"{home_dir}/data/trade"
     path = get_latest_file(directory)
     
     # read and filter data
@@ -40,7 +43,21 @@ if __name__ == "__main__":
     import_df = get_rate_of_change(import_df, "IMP")
     export_df = get_rate_of_change(export_df, "EXP")
     net_df = get_rate_of_change(net_df, "NTRADE")
+
+    # add country name
+    country_ref = get_country_iso_code()
+    
+    # Combine
+    combined = pd.concat([import_df, export_df, net_df], axis = 1)
+    combined = combined.merge(country_ref, left_index=True, right_index = True, how = "inner").fillna(0.)
+    combined = combined.set_index("Country")
+
+    # Assign rank
+    for column in combined.columns:
+        combined[f"{column}Rank"] = assign_rank(combined[column], "descending")
     
     # Save
-    combined = pd.concat([import_df, export_df, net_df], axis = 1)
-    combined.to_csv("../insights/trade/latest.csv", header = True, index = True)
+    combined.to_csv(f"{home_dir}/insights/trade/latest.csv", header = True, index = True)
+
+if __name__ == "__main__":
+    process_trade()

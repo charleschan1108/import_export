@@ -4,15 +4,20 @@ import time
 import urllib3
 from bs4 import BeautifulSoup
 import pandas as pd
+import os
 
-def download_quarterly_oecd_data(url, directory):
+cur_dir = os.path.dirname(__file__)
+
+def download_quarterly_oecd_data(url, home_dir, directory):
     # set Chrome webdriver options
     # set default directory to data
     options = webdriver.ChromeOptions()
     prefs = {"download.default_directory" : directory}
     options.add_experimental_option("prefs", prefs)
 
-    driver = webdriver.Chrome("../chromedriver", chrome_options=options)
+    driver = webdriver.Chrome(f"{home_dir}/chromedriver", chrome_options=options)
+    
+    # browse url
     driver.get(url)
 
     # click the dropdown menu and click download
@@ -36,7 +41,7 @@ def reshape_bs4(table, ncols):
         count += 1
     return output
 
-def crawl_table(url, savepath, columns):
+def crawl_table(url, columns):
     # get html and parse with beautiful soup
     http = urllib3.PoolManager()
     response = http.request('GET', url)
@@ -48,13 +53,25 @@ def crawl_table(url, savepath, columns):
     
     # transform into a dataframe
     df = pd.DataFrame(output, columns = columns)
-    df.to_csv(savepath, header = True, index =False)
+    return df
 
 def crawl_trading_econ_data(url, savepath):
-    crawl_table(url, savepath, ["Country", "Last", "Previous", "Reference", "Unit"])
+    df = crawl_table(url, ["Country", "Last", "Previous", "Reference", "Unit"])
+    df.to_csv(savepath, header = True, index =False)
 
 def crawl_country_code_ref(url, savepath):
-    crawl_table(url, savepath, ["Code", "CountryName", "CountryNameLocal", "lang_code"])
+    columns = [
+        "Country",
+        "Country Code",
+        "ISO Code",
+        "Population",
+        "Area",
+        "GDP(USD)"
+    ]
+    df = crawl_table(url, columns)
+    df["Iso"] = df["ISO Code"].apply(lambda x: x.split("/")[0].strip())
+    df["exdIso"] = df["ISO Code"].apply(lambda x: x.split("/")[1].strip())
+    df.to_csv(savepath, header = True, index =False)
 
 
 

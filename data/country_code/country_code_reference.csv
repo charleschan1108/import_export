@@ -1,249 +1,360 @@
-Code,CountryName,CountryNameLocal,lang_code
-AD,Andorra,Andorra,ca
-AE,United Arab Emirates,دولة الإمارات العربيّة المتّحدة,ar
-AF,Afghanistan,"د افغانستان اسلامي دولتدولت اسلامی افغانستان, جمهوری اسلامی افغانستان","fa, ps"
-AG,Antigua and Barbuda,Antigua and Barbuda,en
-AI,Anguilla,Anguilla,en
-AL,Albania,Shqipëria,sq
-AM,Armenia,Հայաստան,hy
-AO,Angola,Angola,pt
-AQ,Antarctica,"Antarctica, Antártico, Antarctique, Антарктике","en, es, fr, ru[1]"
-AR,Argentina,Argentina,es
-AS,American Samoa,American Samoa,"en, sm"
-AT,Austria,Österreich,de
-AU,Australia,Australia,en
-AW,Aruba,Aruba,"nl, pap"
-AX,Aland Islands,Åland,sv
-AZ,Azerbaijan,Azərbaycan,az
-BA,Bosnia and Herzegovina,Bosna i Hercegovina,"bs, hr, sr"
-BB,Barbados,Barbados,en
-BD,Bangladesh,গণপ্রজাতন্ত্রী বাংলাদেশ,bn
-BE,Belgium,"België, Belgique, Belgien","nl, fr, de"
-BF,Burkina Faso,Burkina Faso,fr
-BG,Bulgaria,България,bg
-BH,Bahrain,البحرين,ar
-BI,Burundi,Burundi,fr
-BJ,Benin,Bénin,fr
-BL,Saint-Barthélemy,Saint-Barthélemy,fr
-BM,Bermuda,Bermuda,en
-BN,Brunei Darussalam,Brunei Darussalam,ms
-BO,Bolivia,"Bolivia, Bulibiya, Volívia, Wuliwya","es, qu, gn, ay"
-BQ,Caribbean Netherlands,Caribisch Nederland,nl
-BR,Brazil,Brasil,pt
-BS,Bahamas,Bahamas,en
-BT,Bhutan,འབྲུག་ཡུལ,dz
-BV,Bouvet Island,Bouvetøya,no
-BW,Botswana,Botswana,"en, tn"
-BY,Belarus,Беларусь,"be, ru"
-BZ,Belize,Belize,en
-CA,Canada,Canada,"en, fr"
-CC,Cocos (Keeling) Islands,Cocos (Keeling) Islands,en
-CD,"Democratic Republic of the Congo (Congo-Kinshasa, former Zaire)",République Démocratique du Congo,fr
-CF,Centrafrican Republic,"République centrafricaine, Ködörösêse tî Bêafrîka","fr, sg"
-CG,Republic of the Congo (Congo-Brazzaville),République du Congo,fr
-CH,Switzerland,"Schweiz, Suisse, Svizzera, Svizra","de, fr, it, rm"
-CI,Côte d'Ivoire,Côte d'Ivoire,fr
-CK,Cook Islands,"Cook Islands, Kūki ʻĀirani","en, rar"
-CL,Chile,Chile,es
-CM,Cameroon,"Cameroun, Cameroon","fr, en"
-CN,China,中国,zh-hans
-CO,Colombia,Colombia,es
-CR,Costa Rica,Costa Rica,es
-CU,Cuba,Cuba,es
-CV,Cabo Verde,Cabo Verde,pt
-CW,Curaçao,Curaçao,"nl, en"
-CX,Christmas Island,Christmas Island,en
-CY,Cyprus,"Κύπρος, Kibris","el, tr"
-CZ,Czech Republic,Česká republika,cs
-DE,Germany,Deutschland,de
-DJ,Djibouti,"Djibouti, جيبوتي, Jabuuti, Gabuutih","fr, ar, so, aa"
-DK,Denmark,Danmark,da
-DM,Dominica,Dominica,en
-DO,Dominican Republic,República Dominicana,es
-DZ,Algeria,الجزائر,ar
-EC,Ecuador,Ecuador,es
-EE,Estonia,Eesti,et
-EG,Egypt,مصر,ar
-EH,Western Sahara,Sahara Occidental,"ar, es, fr"
-ER,Eritrea,"ኤርትራ, إرتريا, Eritrea","ti, ar, en"
-ES,Spain,España,"ast, ca, es, eu, gl"
-ET,Ethiopia,"ኢትዮጵያ, Itoophiyaa","am, om"
-FI,Finland,Suomi,"fi, sv, se"
-FJ,Fiji,Fiji,en
-FK,Falkland Islands,Falkland Islands,en
-FM,Micronesia (Federated States of),Micronesia,en
-FO,Faroe Islands,"Føroyar, Færøerne","fo, da"
-FR,France,France,fr
-GA,Gabon,Gabon,fr
-GB,United Kingdom,United Kingdom,"en, ga, cy, gd, kw"
-GD,Grenada,Grenada,en
-GE,Georgia,საქართველო,ka
-GF,French Guiana,Guyane française,fr
-GG,Guernsey,Guernsey,en
-GH,Ghana,Ghana,en
-GI,Gibraltar,Gibraltar,en
-GL,Greenland,"Kalaallit Nunaat, Grønland","kl, da"
-GM,The Gambia,The Gambia,en
-GN,Guinea,Guinée,fr
-GP,Guadeloupe,Guadeloupe,fr
-GQ,Equatorial Guinea,"Guiena ecuatorial, Guinée équatoriale, Guiné Equatorial","es, fr, pt"
-GR,Greece,Ελλάδα,el
-GS,South Georgia and the South Sandwich Islands,South Georgia and the South Sandwich Islands,en
-GT,Guatemala,Guatemala,es
-GU,Guam,"Guam, Guåhån","en, ch"
-GW,Guinea Bissau,Guiné-Bissau,pt
-GY,Guyana,Guyana,en
-HK,Hong Kong (SAR of China),"香港, Hong Kong","zh-hant, en"
-HM,Heard Island and McDonald Islands,Heard Island and McDonald Islands,en
-HN,Honduras,Honduras,es
-HR,Croatia,Hrvatska,hr
-HT,Haiti,"Haïti, Ayiti","fr, ht"
-HU,Hungary,Magyarország,hu
-ID,Indonesia,Indonesia,id
-IE,Ireland,"Ireland, Éire","en, ga"
-IL,Israel,ישראל,he
-IM,Isle of Man,Isle of Man,en
-IN,India,"भारत, India","hi, en"
-IO,British Indian Ocean Territory,British Indian Ocean Territory,en
-IQ,Iraq,"العراق, Iraq","ar, ku"
-IR,Iran,ایران,fa
-IS,Iceland,Ísland,is
-IT,Italy,Italia,"it, de, fr"
-JE,Jersey,Jersey,en
-JM,Jamaica,Jamaica,en
-JO,Jordan,الأُرْدُن,ar
-JP,Japan,日本,ja
-KE,Kenya,Kenya,"sw, en"
-KG,Kyrgyzstan,"Кыргызстан, Киргизия","ky, ru"
-KH,Cambodia,កម្ពុជា,km
-KI,Kiribati,Kiribati,en
-KM,Comores,"ﺍﻟﻘﻤﺮي, Comores, Komori","ar, fr, sw"
-KN,Saint Kitts and Nevis,Saint Kitts and Nevis,en
-KP,North Korea,북조선,ko
-KR,South Korea,대한민국,"ko, en"
-KW,Kuwait,الكويت,ar
-KY,Cayman Islands,Cayman Islands,en
-KZ,Kazakhstan,"Қазақстан, Казахстан","kk, ru"
-LA,Laos,ປະຊາຊົນລາວ,lo
-LB,Lebanon,"لبنان, Liban","ar, fr"
-LC,Saint Lucia,Saint Lucia,en
-LI,Liechtenstein,Liechtenstein,de
-LK,Sri Lanka,"ශ්‍රී ලංකා, இலங்கை","si, ta"
-LR,Liberia,Liberia,en
-LS,Lesotho,Lesotho,"en, st"
-LT,Lithuania,Lietuva,lt
-LU,Luxembourg,"Lëtzebuerg, Luxembourg, Luxemburg","lb, fr, de"
-LV,Latvia,Latvija,lv
-LY,Libya,ليبيا,ar
-MA,Morocco,"المغرب, Maroc, ⵍⵎⵖⵔⵉⴱ","ar, fr, zgh"
-MC,Monaco,Monaco,fr
-MD,Moldova,"Moldova, Молдавия","ro, ru, uk"
-ME,Montenegro,"Crna Gora, Црна Гора","srp, sr, hr, bs, sq"
-MF,Saint Martin (French part),Saint-Martin,fr
-MG,Madagascar,"Madagasikara, Madagascar","mg, fr"
-MH,Marshall Islands,Marshall Islands,"en, mh"
-MK,North Macedonia,Северна Македонија,mk
-ML,Mali,Mali,fr
-MM,Myanmar,မြန်မာ,my
-MN,Mongolia,Монгол Улс,mn
-MO,Macao (SAR of China),"澳門, Macau","zh-hant, pt"
-MP,Northern Mariana Islands,Northern Mariana Islands,"en, ch"
-MQ,Martinique,Martinique,fr
-MR,Mauritania,"موريتانيا, Mauritanie","ar, fr"
-MS,Montserrat,Montserrat,en
-MT,Malta,Malta,"mt, en"
-MU,Mauritius,"Maurice, Mauritius","mfe, fr, en"
-MV,Maldives,,dv
-MW,Malawi,Malawi,"en, ny"
-MX,Mexico,México,es
-MY,Malaysia,,ms
-MZ,Mozambique,Mozambique,pt
-NA,Namibia,Namibia,"en, sf, de"
-NC,New Caledonia,Nouvelle-Calédonie,fr
-NE,Niger,Niger,fr
-NF,Norfolk Island,Norfolk Island,"en, pih"
-NG,Nigeria,Nigeria,en
-NI,Nicaragua,Nicaragua,es
-NL,The Netherlands,Nederland,nl
-NO,Norway,"Norge, Noreg","nb, nn, no, se"
-NP,Nepal,,ne
-NR,Nauru,Nauru,"na, en"
-NU,Niue,Niue,"niu, en"
-NZ,New Zealand,New Zealand,"mi, en"
-OM,Oman,سلطنة عُمان,ar
-PA,Panama,Panama,es
-PE,Peru,Perú,es
-PF,French Polynesia,Polynésie française,fr
-PG,Papua New Guinea,Papua New Guinea,"en, tpi, ho"
-PH,Philippines,Philippines,"en, tl"
-PK,Pakistan,پاکستان,"en, ur"
-PL,Poland,Polska,pl
-PM,Saint Pierre and Miquelon,Saint-Pierre-et-Miquelon,fr
-PN,Pitcairn,Pitcairn,"en, pih"
-PR,Puerto Rico,Puerto Rico,"es, en"
-PS,Palestinian Territory,Palestinian Territory,"ar, he"
-PT,Portugal,Portugal,pt
-PW,Palau,Palau,"en, pau, ja, sov, tox"
-PY,Paraguay,Paraguay,"es, gn"
-QA,Qatar,قطر,ar
-RE,Reunion,La Réunion,fr
-RO,Romania,România,ro
-RS,Serbia,Србија,"sr, sr-Latn"
-RU,Russia,Россия,ru
-RW,Rwanda,Rwanda,"rw, fr, en"
-SA,Saudi Arabia,السعودية,ar
-SB,Solomon Islands,Solomon Islands,en
-SC,Seychelles,Seychelles,"fr, en, crs"
-SD,Sudan,السودان,"ar, en"
-SE,Sweden,Sverige,sv
-SG,Singapore,Singapore,"zh-hans, en, ms, ta"
-SH,Saint Helena,Saint Helena,en
-SI,Slovenia,Slovenija,sl
-SJ,Svalbard and Jan Mayen,Svalbard and Jan Mayen,no
-SK,Slovakia,Slovensko,sk
-SL,Sierra Leone,Sierra Leone,en
-SM,San Marino,San Marino,it
-SN,Sénégal,Sénégal,fr
-SO,Somalia,"Somalia, الصومال","so, ar"
-SR,Suriname,Suriname,nl
-ST,São Tomé and Príncipe,São Tomé e Príncipe,pt
-SS,South Sudan,South Sudan,en
-SV,El Salvador,El Salvador,es
-SX,Saint Martin (Dutch part),Sint Maarten,"nl, en"
-SY,Syria,"سوريا, Sūriyya",ar
-SZ,eSwatini,eSwatini,"en, ss"
-TC,Turks and Caicos Islands,Turks and Caicos Islands,en
-TD,Chad,"Tchad, تشاد","fr, ar"
-TF,French Southern and Antarctic Lands,Terres australes et antarctiques françaises,fr
-TG,Togo,Togo,fr
-TH,Thailand,ประเทศไทย,th
-TJ,Tajikistan,",","tg, ru"
-TK,Tokelau,Tokelau,"tkl, en, sm"
-TL,Timor-Leste,"Timor-Leste, Timor Lorosa'e","pt, tet"
-TM,Turkmenistan,Türkmenistan,tk
-TN,Tunisia,"تونس, Tunisie","ar, fr"
-TO,Tonga,Tonga,en
-TR,Turkey,Türkiye,tr
-TT,Trinidad and Tobago,Trinidad and Tobago,en
-TV,Tuvalu,Tuvalu,en
-TW,Taiwan,Taiwan,zh-hant
-TZ,Tanzania,Tanzania,"sw, en"
-UA,Ukraine,Україна,uk
-UG,Uganda,Uganda,"en, sw"
-UM,United States Minor Outlying Islands,United States Minor Outlying Islands,en
-US,United States of America,United States of America,en
-UY,Uruguay,Uruguay,es
-UZ,Uzbekistan,,"uz, kaa"
-VA,City of the Vatican,Città del Vaticano,it
-VC,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,en
-VE,Venezuela,Venezuela,es
-VG,British Virgin Islands,British Virgin Islands,en
-VI,United States Virgin Islands,United States Virgin Islands,en
-VN,Vietnam,Việt Nam,vi
-VU,Vanuatu,Vanuatu,"bi, en, fr"
-WF,Wallis and Futuna,Wallis-et-Futuna,fr
-WS,Samoa,Samoa,"sm, en"
-YE,Yemen,اليَمَن,ar
-YT,Mayotte,Mayotte,fr
-ZA,South Africa,South Africa,"en, af, st, tn, xh, zu"
-ZM,Zambia,Zambia,en
+Country,Country Code,ISO Code,Population,Area,GDP(USD),Iso,exdIso
+Afghanistan,93,AF / AFG,"29,121,286","647,500",20.65 Billion,AF,AFG
+Albania,355,AL / ALB,"2,986,952","28,748",12.8 Billion,AL,ALB
+Algeria,213,DZ / DZA,"34,586,184","2,381,740",215.7 Billion,DZ,DZA
+American Samoa,1-684,AS / ASM,"57,881",199,462.2 Million,AS,ASM
+Andorra,376,AD / AND,"84,000",468,4.8 Billion,AD,AND
+Angola,244,AO / AGO,"13,068,161","1,246,700",124 Billion,AO,AGO
+Anguilla,1-264,AI / AIA,"13,254",102,175.4 Million,AI,AIA
+Antarctica,672,AQ / ATA,0,"14,000,000",,AQ,ATA
+Antigua and Barbuda,1-268,AG / ATG,"86,754",443,1.22 Billion,AG,ATG
+Argentina,54,AR / ARG,"41,343,201","2,766,890",484.6 Billion,AR,ARG
+Armenia,374,AM / ARM,"2,968,000","29,800",10.44 Billion,AM,ARM
+Aruba,297,AW / ABW,"71,566",193,2.516 Billion,AW,ABW
+Australia,61,AU / AUS,"21,515,754","7,686,850",1.488 Trillion,AU,AUS
+Austria,43,AT / AUT,"8,205,000","83,858",417.9 Billion,AT,AUT
+Azerbaijan,994,AZ / AZE,"8,303,512","86,600",76.01 Billion,AZ,AZE
+Bahamas,1-242,BS / BHS,"301,790","13,940",8.373 Billion,BS,BHS
+Bahrain,973,BH / BHR,"738,004",665,28.36 Billion,BH,BHR
+Bangladesh,880,BD / BGD,"156,118,464","144,000",140.2 Billion,BD,BGD
+Barbados,1-246,BB / BRB,"285,653",431,4.262 Billion,BB,BRB
+Belarus,375,BY / BLR,"9,685,000","207,600",69.24 Billion,BY,BLR
+Belgium,32,BE / BEL,"10,403,000","30,510",507.4 Billion,BE,BEL
+Belize,501,BZ / BLZ,"314,522","22,966",1.637 Billion,BZ,BLZ
+Benin,229,BJ / BEN,"9,056,010","112,620",8.359 Billion,BJ,BEN
+Bermuda,1-441,BM / BMU,"65,365",53,5.6 Billion,BM,BMU
+Bhutan,975,BT / BTN,"699,847","47,000",2.133 Billion,BT,BTN
+Bolivia,591,BO / BOL,"9,947,418","1,098,580",30.79 Billion,BO,BOL
+Bosnia and Herzegovina,387,BA / BIH,"4,590,000","51,129",18.87 Billion,BA,BIH
+Botswana,267,BW / BWA,"2,029,307","600,370",15.53 Billion,BW,BWA
+Brazil,55,BR / BRA,"201,103,330","8,511,965",2.19 Trillion,BR,BRA
+British Indian Ocean Territory,246,IO / IOT,"4,000",60,,IO,IOT
+British Virgin Islands,1-284,VG / VGB,"21,730",153,1.095 Billion,VG,VGB
+Brunei,673,BN / BRN,"395,027","5,770",16.56 Billion,BN,BRN
+Bulgaria,359,BG / BGR,"7,148,785","110,910",53.7 Billion,BG,BGR
+Burkina Faso,226,BF / BFA,"16,241,811","274,200",12.13 Billion,BF,BFA
+Burundi,257,BI / BDI,"9,863,117","27,830",2.676 Billion,BI,BDI
+Cambodia,855,KH / KHM,"14,453,680","181,040",15.64 Billion,KH,KHM
+Cameroon,237,CM / CMR,"19,294,149","475,440",27.88 Billion,CM,CMR
+Canada,1,CA / CAN,"33,679,000","9,984,670",1.825 Trillion,CA,CAN
+Cape Verde,238,CV / CPV,"508,659","4,033",1.955 Billion,CV,CPV
+Cayman Islands,1-345,KY / CYM,"44,270",262,2.25 Billion,KY,CYM
+Central African Republic,236,CF / CAF,"4,844,927","622,984",2.05 Billion,CF,CAF
+Chad,235,TD / TCD,"10,543,464","1,284,000",13.59 Billion,TD,TCD
+Chile,56,CL / CHL,"16,746,491","756,950",281.7 Billion,CL,CHL
+China,86,CN / CHN,"1,330,044,000","9,596,960",9.33 Trillion,CN,CHN
+Christmas Island,61,CX / CXR,"1,500",135,,CX,CXR
+Cocos Islands,61,CC / CCK,628,14,,CC,CCK
+Colombia,57,CO / COL,"47,790,000","1,138,910",369.2 Billion,CO,COL
+Comoros,269,KM / COM,"773,407","2,170",658 Million,KM,COM
+Cook Islands,682,CK / COK,"21,388",240,183.2 Million,CK,COK
+Costa Rica,506,CR / CRI,"4,516,220","51,100",48.51 Billion,CR,CRI
+Croatia,385,HR / HRV,"4,491,000","56,542",59.14 Billion,HR,HRV
+Cuba,53,CU / CUB,"11,423,000","110,860",72.3 Billion,CU,CUB
+Curacao,599,CW / CUW,"141,766",444,5.6 Billion,CW,CUW
+Cyprus,357,CY / CYP,"1,102,677","9,250",21.78 Billion,CY,CYP
+Czech Republic,420,CZ / CZE,"10,476,000","78,866",194.8 Billion,CZ,CZE
+Democratic Republic of the Congo,243,CD / COD,"70,916,439","2,345,410",18.56 Billion,CD,COD
+Denmark,45,DK / DNK,"5,484,000","43,094",324.3 Billion,DK,DNK
+Djibouti,253,DJ / DJI,"740,528","23,000",1.459 Billion,DJ,DJI
+Dominica,1-767,DM / DMA,"72,813",754,495 Million,DM,DMA
+Dominican Republic,"1-809, 1-829, 1-849",DO / DOM,"9,823,821","48,730",59.27 Billion,DO,DOM
+East Timor,670,TL / TLS,"1,154,625","15,007",6.129 Billion,TL,TLS
+Ecuador,593,EC / ECU,"14,790,608","283,560",91.41 Billion,EC,ECU
+Egypt,20,EG / EGY,"80,471,869","1,001,450",262 Billion,EG,EGY
+El Salvador,503,SV / SLV,"6,052,064","21,040",24.67 Billion,SV,SLV
+Equatorial Guinea,240,GQ / GNQ,"1,014,999","28,051",17.08 Billion,GQ,GNQ
+Eritrea,291,ER / ERI,"5,792,984","121,320",3.438 Billion,ER,ERI
+Estonia,372,EE / EST,"1,291,170","45,226",24.28 Billion,EE,EST
+Ethiopia,251,ET / ETH,"88,013,491","1,127,127",47.34 Billion,ET,ETH
+Falkland Islands,500,FK / FLK,"2,638","12,173",164.5 Million,FK,FLK
+Faroe Islands,298,FO / FRO,"48,228","1,399",2.32 Billion,FO,FRO
+Fiji,679,FJ / FJI,"875,983","18,270",4.218 Billion,FJ,FJI
+Finland,358,FI / FIN,"5,244,000","337,030",259.6 Billion,FI,FIN
+France,33,FR / FRA,"64,768,389","547,030",2.739 Trillion,FR,FRA
+French Polynesia,689,PF / PYF,"270,485","4,167",5.65 Billion,PF,PYF
+Gabon,241,GA / GAB,"1,545,255","267,667",19.97 Billion,GA,GAB
+Gambia,220,GM / GMB,"1,593,256","11,300",896 Million,GM,GMB
+Georgia,995,GE / GEO,"4,630,000","69,700",15.95 Billion,GE,GEO
+Germany,49,DE / DEU,"81,802,257","357,021",3.593 Trillion,DE,DEU
+Ghana,233,GH / GHA,"24,339,838","239,460",45.55 Billion,GH,GHA
+Gibraltar,350,GI / GIB,"27,884",7,1.106 Billion,GI,GIB
+Greece,30,GR / GRC,"11,000,000","131,940",243.3 Billion,GR,GRC
+Greenland,299,GL / GRL,"56,375","2,166,086",2.16 Billion,GL,GRL
+Grenada,1-473,GD / GRD,"107,818",344,811 Million,GD,GRD
+Guam,1-671,GU / GUM,"159,358",549,4.6 Billion,GU,GUM
+Guatemala,502,GT / GTM,"13,550,440","108,890",53.9 Billion,GT,GTM
+Guernsey,44-1481,GG / GGY,"65,228",78,2.742 Billion,GG,GGY
+Guinea,224,GN / GIN,"10,324,025","245,857",6.544 Billion,GN,GIN
+Guinea-Bissau,245,GW / GNB,"1,565,126","36,120",880 Million,GW,GNB
+Guyana,592,GY / GUY,"748,486","214,970",3.02 Billion,GY,GUY
+Haiti,509,HT / HTI,"9,648,924","27,750",8.287 Billion,HT,HTI
+Honduras,504,HN / HND,"7,989,415","112,090",18.88 Billion,HN,HND
+Hong Kong,852,HK / HKG,"6,898,686","1,092",272.1 Billion,HK,HKG
+Hungary,36,HU / HUN,"9,982,000","93,030",130.6 Billion,HU,HUN
+Iceland,354,IS / ISL,"308,910","103,000",14.59 Billion,IS,ISL
+India,91,IN / IND,"1,173,108,018","3,287,590",1.67 Trillion,IN,IND
+Indonesia,62,ID / IDN,"242,968,342","1,919,440",867.5 Billion,ID,IDN
+Iran,98,IR / IRN,"76,923,300","1,648,000",411.9 Billion,IR,IRN
+Iraq,964,IQ / IRQ,"29,671,605","437,072",221.8 Billion,IQ,IRQ
+Ireland,353,IE / IRL,"4,622,917","70,280",220.9 Billion,IE,IRL
+Isle of Man,44-1624,IM / IMN,"75,049",572,4.076 Billion,IM,IMN
+Israel,972,IL / ISR,"7,353,985","20,770",272.7 Billion,IL,ISR
+Italy,39,IT / ITA,"60,340,328","301,230",2.068 Trillion,IT,ITA
+Ivory Coast,225,CI / CIV,"21,058,798","322,460",28.28 Billion,CI,CIV
+Jamaica,1-876,JM / JAM,"2,847,232","10,991",14.39 Billion,JM,JAM
+Japan,81,JP / JPN,"127,288,000","377,835",5.007 Trillion,JP,JPN
+Jersey,44-1534,JE / JEY,"90,812",116,5.1 Billion,JE,JEY
+Jordan,962,JO / JOR,"6,407,085","92,300",34.08 Billion,JO,JOR
+Kazakhstan,7,KZ / KAZ,"15,340,000","2,717,300",224.9 Billion,KZ,KAZ
+Kenya,254,KE / KEN,"40,046,566","582,650",45.31 Billion,KE,KEN
+Kiribati,686,KI / KIR,"92,533",811,173 Million,KI,KIR
+Kosovo,383,XK / XKX,"1,800,000","10,887",7.15 Billion,XK,XKX
+Kuwait,965,KW / KWT,"2,789,132","17,820",179.5 Billion,KW,KWT
+Kyrgyzstan,996,KG / KGZ,"5,508,626","198,500",7.234 Billion,KG,KGZ
+Laos,856,LA / LAO,"6,368,162","236,800",10.1 Billion,LA,LAO
+Latvia,371,LV / LVA,"2,217,969","64,589",30.38 Billion,LV,LVA
+Lebanon,961,LB / LBN,"4,125,247","10,400",43.49 Billion,LB,LBN
+Lesotho,266,LS / LSO,"1,919,552","30,355",2.457 Billion,LS,LSO
+Liberia,231,LR / LBR,"3,685,076","111,370",1.977 Billion,LR,LBR
+Libya,218,LY / LBY,"6,461,454","1,759,540",70.92 Billion,LY,LBY
+Liechtenstein,423,LI / LIE,"35,000",160,5.113 Billion,LI,LIE
+Lithuania,370,LT / LTU,"2,944,459","65,200",46.71 Billion,LT,LTU
+Luxembourg,352,LU / LUX,"497,538","2,586",60.54 Billion,LU,LUX
+Macau,853,MO / MAC,"449,198",254,51.68 Billion,MO,MAC
+Macedonia,389,MK / MKD,"2,062,294","25,333",10.65 Billion,MK,MKD
+Madagascar,261,MG / MDG,"21,281,844","587,040",10.53 Billion,MG,MDG
+Malawi,265,MW / MWI,"15,447,500","118,480",3.683 Billion,MW,MWI
+Malaysia,60,MY / MYS,"28,274,729","329,750",312.4 Billion,MY,MYS
+Maldives,960,MV / MDV,"395,650",300,2.27 Billion,MV,MDV
+Mali,223,ML / MLI,"13,796,354","1,240,000",11.37 Billion,ML,MLI
+Malta,356,MT / MLT,"403,000",316,9.541 Billion,MT,MLT
+Marshall Islands,692,MH / MHL,"65,859",181,193 Million,MH,MHL
+Mauritania,222,MR / MRT,"3,205,060","1,030,700",4.183 Billion,MR,MRT
+Mauritius,230,MU / MUS,"1,294,104","2,040",11.9 Billion,MU,MUS
+Mayotte,262,YT / MYT,"159,042",374,,YT,MYT
+Mexico,52,MX / MEX,"112,468,855","1,972,550",1.327 Trillion,MX,MEX
+Micronesia,691,FM / FSM,"107,708",702,339 Million,FM,FSM
+Moldova,373,MD / MDA,"4,324,000","33,843",7.932 Billion,MD,MDA
+Monaco,377,MC / MCO,"32,965",2,5.748 Billion,MC,MCO
+Mongolia,976,MN / MNG,"3,086,918","1,565,000",11.14 Billion,MN,MNG
+Montenegro,382,ME / MNE,"666,730","14,026",4.518 Billion,ME,MNE
+Montserrat,1-664,MS / MSR,"9,341",102,,MS,MSR
+Morocco,212,MA / MAR,"31,627,428","446,550",104.8 Billion,MA,MAR
+Mozambique,258,MZ / MOZ,"22,061,451","801,590",14.67 Billion,MZ,MOZ
+Myanmar,95,MM / MMR,"53,414,374","678,500",59.43 Billion,MM,MMR
+Namibia,264,NA / NAM,"2,128,471","825,418",12.3 Billion,NA,NAM
+Nauru,674,NR / NRU,"10,065",21,,NR,NRU
+Nepal,977,NP / NPL,"28,951,852","140,800",19.34 Billion,NP,NPL
+Netherlands,31,NL / NLD,"16,645,000","41,526",722.3 Billion,NL,NLD
+Netherlands Antilles,599,AN / ANT,"136,197",960,,AN,ANT
+New Caledonia,687,NC / NCL,"216,494","19,060",9.28 Billion,NC,NCL
+New Zealand,64,NZ / NZL,"4,252,277","268,680",181.1 Billion,NZ,NZL
+Nicaragua,505,NI / NIC,"5,995,928","129,494",11.26 Billion,NI,NIC
+Niger,227,NE / NER,"15,878,271","1,267,000",7.304 Billion,NE,NER
+Nigeria,234,NG / NGA,"154,000,000","923,768",502 Billion,NG,NGA
+Niue,683,NU / NIU,"2,166",260,10.01 Million,NU,NIU
+North Korea,850,KP / PRK,"22,912,177","120,540",28 Billion,KP,PRK
+Northern Mariana Islands,1-670,MP / MNP,"53,883",477,733 Million,MP,MNP
+Norway,47,NO / NOR,"5,009,150","324,220",515.8 Billion,NO,NOR
+Oman,968,OM / OMN,"2,967,717","212,460",81.95 Billion,OM,OMN
+Pakistan,92,PK / PAK,"184,404,791","803,940",236.5 Billion,PK,PAK
+Palau,680,PW / PLW,"19,907",458,221 Million,PW,PLW
+Palestine,970,PS / PSE,"3,800,000","5,970",6.641 Billion,PS,PSE
+Panama,507,PA / PAN,"3,410,676","78,200",40.62 Billion,PA,PAN
+Papua New Guinea,675,PG / PNG,"6,064,515","462,840",16.1 Billion,PG,PNG
+Paraguay,595,PY / PRY,"6,375,830","406,750",30.56 Billion,PY,PRY
+Peru,51,PE / PER,"29,907,003","1,285,220",210.3 Billion,PE,PER
+Philippines,63,PH / PHL,"99,900,177","300,000",272.2 Billion,PH,PHL
+Pitcairn,64,PN / PCN,46,47,,PN,PCN
+Poland,48,PL / POL,"38,500,000","312,685",513.9 Billion,PL,POL
+Portugal,351,PT / PRT,"10,676,000","92,391",219.3 Billion,PT,PRT
+Puerto Rico,"1-787, 1-939",PR / PRI,"3,916,632","9,104",93.52 Billion,PR,PRI
+Qatar,974,QA / QAT,"840,926","11,437",213.1 Billion,QA,QAT
+Republic of the Congo,242,CG / COG,"3,039,126","342,000",14.25 Billion,CG,COG
+Reunion,262,RE / REU,"776,948","2,517",,RE,REU
+Romania,40,RO / ROU,"21,959,278","237,500",188.9 Billion,RO,ROU
+Russia,7,RU / RUS,"140,702,000","17,100,000",2.113 Trillion,RU,RUS
+Rwanda,250,RW / RWA,"11,055,976","26,338",7.7 Billion,RW,RWA
+Saint Barthelemy,590,BL / BLM,"8,450",21,,BL,BLM
+Saint Helena,290,SH / SHN,"7,460",410,,SH,SHN
+Saint Kitts and Nevis,1-869,KN / KNA,"51,134",261,767 Million,KN,KNA
+Saint Lucia,1-758,LC / LCA,"160,922",616,1.377 Billion,LC,LCA
+Saint Martin,590,MF / MAF,"35,925",53,561.5 Million,MF,MAF
+Saint Pierre and Miquelon,508,PM / SPM,"7,012",242,215.3 Million,PM,SPM
+Saint Vincent and the Grenadines,1-784,VC / VCT,"104,217",389,742 Million,VC,VCT
+Samoa,685,WS / WSM,"192,001","2,944",705 Million,WS,WSM
+San Marino,378,SM / SMR,"31,477",61,1.866 Billion,SM,SMR
+Sao Tome and Principe,239,ST / STP,"175,808","1,001",311 Million,ST,STP
+Saudi Arabia,966,SA / SAU,"25,731,776","1,960,582",718.5 Billion,SA,SAU
+Senegal,221,SN / SEN,"12,323,252","196,190",15.36 Billion,SN,SEN
+Serbia,381,RS / SRB,"7,344,847","88,361",43.68 Billion,RS,SRB
+Seychelles,248,SC / SYC,"88,340",455,1.271 Billion,SC,SYC
+Sierra Leone,232,SL / SLE,"5,245,695","71,740",4.607 Billion,SL,SLE
+Singapore,65,SG / SGP,"4,701,069",693,295.7 Billion,SG,SGP
+Sint Maarten,1-721,SX / SXM,"37,429",34,794.7 Million,SX,SXM
+Slovakia,421,SK / SVK,"5,455,000","48,845",96.96 Billion,SK,SVK
+Slovenia,386,SI / SVN,"2,007,000","20,273",46.82 Billion,SI,SVN
+Solomon Islands,677,SB / SLB,"559,198","28,450",1.099 Billion,SB,SLB
+Somalia,252,SO / SOM,"10,112,453","637,657",2.372 Billion,SO,SOM
+South Africa,27,ZA / ZAF,"49,000,000","1,219,912",353.9 Billion,ZA,ZAF
+South Korea,82,KR / KOR,"48,422,644","98,480",1.198 Trillion,KR,KOR
+South Sudan,211,SS / SSD,"8,260,490","644,329",11.77 Billion,SS,SSD
+Spain,34,ES / ESP,"46,505,963","504,782",1.356 Trillion,ES,ESP
+Sri Lanka,94,LK / LKA,"21,513,990","65,610",65.12 Billion,LK,LKA
+Sudan,249,SD / SDN,"35,000,000","1,861,484",52.5 Billion,SD,SDN
+Suriname,597,SR / SUR,"492,829","163,270",5.009 Billion,SR,SUR
+Svalbard and Jan Mayen,47,SJ / SJM,"2,550","62,049",,SJ,SJM
+Swaziland,268,SZ / SWZ,"1,354,051","17,363",3.807 Billion,SZ,SWZ
+Sweden,46,SE / SWE,"9,555,893","449,964",552 Billion,SE,SWE
+Switzerland,41,CH / CHE,"7,581,000","41,290",646.2 Billion,CH,CHE
+Syria,963,SY / SYR,"22,198,110","185,180",64.7 Billion,SY,SYR
+Taiwan,886,TW / TWN,"22,894,384","35,980",484.7 Billion,TW,TWN
+Tajikistan,992,TJ / TJK,"7,487,489","143,100",8.513 Billion,TJ,TJK
+Tanzania,255,TZ / TZA,"41,892,895","945,087",31.94 Billion,TZ,TZA
+Thailand,66,TH / THA,"67,089,500","514,000",400.9 Billion,TH,THA
+Togo,228,TG / TGO,"6,587,239","56,785",4.299 Billion,TG,TGO
+Tokelau,690,TK / TKL,"1,466",10,,TK,TKL
+Tonga,676,TO / TON,"122,580",748,477 Million,TO,TON
+Trinidad and Tobago,1-868,TT / TTO,"1,228,691","5,128",27.13 Billion,TT,TTO
+Tunisia,216,TN / TUN,"10,589,025","163,610",48.38 Billion,TN,TUN
+Turkey,90,TR / TUR,"77,804,122","780,580",821.8 Billion,TR,TUR
+Turkmenistan,993,TM / TKM,"4,940,916","488,100",40.56 Billion,TM,TKM
+Turks and Caicos Islands,1-649,TC / TCA,"20,556",430,,TC,TCA
+Tuvalu,688,TV / TUV,"10,472",26,38 Million,TV,TUV
+U.S. Virgin Islands,1-340,VI / VIR,"108,708",352,,VI,VIR
+Uganda,256,UG / UGA,"33,398,682","236,040",22.6 Billion,UG,UGA
+Ukraine,380,UA / UKR,"45,415,596","603,700",175.5 Billion,UA,UKR
+United Arab Emirates,971,AE / ARE,"4,975,593","82,880",390 Billion,AE,ARE
+United Kingdom,44,GB / GBR,"62,348,447","244,820",2.49 Trillion,GB,GBR
+United States,1,US / USA,"310,232,863","9,629,091",16.72 Trillion,US,USA
+Uruguay,598,UY / URY,"3,477,000","176,220",57.11 Billion,UY,URY
+Uzbekistan,998,UZ / UZB,"27,865,738","447,400",55.18 Billion,UZ,UZB
+Vanuatu,678,VU / VUT,"221,552","12,200",828 Million,VU,VUT
+Vatican,379,VA / VAT,921,0,,VA,VAT
+Venezuela,58,VE / VEN,"27,223,228","912,050",367.5 Billion,VE,VEN
+Vietnam,84,VN / VNM,"89,571,130","329,560",170 Billion,VN,VNM
+Wallis and Futuna,681,WF / WLF,"16,025",274,,WF,WLF
+Western Sahara,212,EH / ESH,"273,008","266,000",,EH,ESH
+Yemen,967,YE / YEM,"23,495,361","527,970",43.89 Billion,YE,YEM
+Zambia,260,ZM / ZMB,"13,460,305","752,614",22.24 Billion,ZM,ZMB
+Zimbabwe,263,ZW / ZWE,"11,651,858","390,580",10.48 Billion,ZW,ZWE
+Afghanistan,93,AF / AFG,Albania,355,AL / ALB,AF,AFG
+Algeria,213,DZ / DZA,American Samoa,1-684,AS / ASM,DZ,DZA
+Andorra,376,AD / AND,Angola,244,AO / AGO,AD,AND
+Anguilla,1-264,AI / AIA,Antarctica,672,AQ / ATA,AI,AIA
+Antigua and Barbuda,1-268,AG / ATG,Argentina,54,AR / ARG,AG,ATG
+Armenia,374,AM / ARM,Aruba,297,AW / ABW,AM,ARM
+Australia,61,AU / AUS,Austria,43,AT / AUT,AU,AUS
+Azerbaijan,994,AZ / AZE,Bahamas,1-242,BS / BHS,AZ,AZE
+Bahrain,973,BH / BHR,Bangladesh,880,BD / BGD,BH,BHR
+Barbados,1-246,BB / BRB,Belarus,375,BY / BLR,BB,BRB
+Belgium,32,BE / BEL,Belize,501,BZ / BLZ,BE,BEL
+Benin,229,BJ / BEN,Bermuda,1-441,BM / BMU,BJ,BEN
+Bhutan,975,BT / BTN,Bolivia,591,BO / BOL,BT,BTN
+Bosnia and Herzegovina,387,BA / BIH,Botswana,267,BW / BWA,BA,BIH
+Brazil,55,BR / BRA,British Indian Ocean Territory,246,IO / IOT,BR,BRA
+British Virgin Islands,1-284,VG / VGB,Brunei,673,BN / BRN,VG,VGB
+Bulgaria,359,BG / BGR,Burkina Faso,226,BF / BFA,BG,BGR
+Burundi,257,BI / BDI,Cambodia,855,KH / KHM,BI,BDI
+Cameroon,237,CM / CMR,Canada,1,CA / CAN,CM,CMR
+Cape Verde,238,CV / CPV,Cayman Islands,1-345,KY / CYM,CV,CPV
+Central African Republic,236,CF / CAF,Chad,235,TD / TCD,CF,CAF
+Chile,56,CL / CHL,China,86,CN / CHN,CL,CHL
+Christmas Island,61,CX / CXR,Cocos Islands,61,CC / CCK,CX,CXR
+Colombia,57,CO / COL,Comoros,269,KM / COM,CO,COL
+Cook Islands,682,CK / COK,Costa Rica,506,CR / CRI,CK,COK
+Croatia,385,HR / HRV,Cuba,53,CU / CUB,HR,HRV
+Curacao,599,CW / CUW,Cyprus,357,CY / CYP,CW,CUW
+Czech Republic,420,CZ / CZE,Democratic Republic of the Congo,243,CD / COD,CZ,CZE
+Denmark,45,DK / DNK,Djibouti,253,DJ / DJI,DK,DNK
+Dominica,1-767,DM / DMA,Dominican Republic,"1-809, 1-829, 1-849",DO / DOM,DM,DMA
+East Timor,670,TL / TLS,Ecuador,593,EC / ECU,TL,TLS
+Egypt,20,EG / EGY,El Salvador,503,SV / SLV,EG,EGY
+Equatorial Guinea,240,GQ / GNQ,Eritrea,291,ER / ERI,GQ,GNQ
+Estonia,372,EE / EST,Ethiopia,251,ET / ETH,EE,EST
+Falkland Islands,500,FK / FLK,Faroe Islands,298,FO / FRO,FK,FLK
+Fiji,679,FJ / FJI,Finland,358,FI / FIN,FJ,FJI
+France,33,FR / FRA,French Polynesia,689,PF / PYF,FR,FRA
+Gabon,241,GA / GAB,Gambia,220,GM / GMB,GA,GAB
+Georgia,995,GE / GEO,Germany,49,DE / DEU,GE,GEO
+Ghana,233,GH / GHA,Gibraltar,350,GI / GIB,GH,GHA
+Greece,30,GR / GRC,Greenland,299,GL / GRL,GR,GRC
+Grenada,1-473,GD / GRD,Guam,1-671,GU / GUM,GD,GRD
+Guatemala,502,GT / GTM,Guernsey,44-1481,GG / GGY,GT,GTM
+Guinea,224,GN / GIN,Guinea-Bissau,245,GW / GNB,GN,GIN
+Guyana,592,GY / GUY,Haiti,509,HT / HTI,GY,GUY
+Honduras,504,HN / HND,Hong Kong,852,HK / HKG,HN,HND
+Hungary,36,HU / HUN,Iceland,354,IS / ISL,HU,HUN
+India,91,IN / IND,Indonesia,62,ID / IDN,IN,IND
+Iran,98,IR / IRN,Iraq,964,IQ / IRQ,IR,IRN
+Ireland,353,IE / IRL,Isle of Man,44-1624,IM / IMN,IE,IRL
+Israel,972,IL / ISR,Italy,39,IT / ITA,IL,ISR
+Ivory Coast,225,CI / CIV,Jamaica,1-876,JM / JAM,CI,CIV
+Japan,81,JP / JPN,Jersey,44-1534,JE / JEY,JP,JPN
+Jordan,962,JO / JOR,Kazakhstan,7,KZ / KAZ,JO,JOR
+Kenya,254,KE / KEN,Kiribati,686,KI / KIR,KE,KEN
+Kosovo,383,XK / XKX,Kuwait,965,KW / KWT,XK,XKX
+Kyrgyzstan,996,KG / KGZ,Laos,856,LA / LAO,KG,KGZ
+Latvia,371,LV / LVA,Lebanon,961,LB / LBN,LV,LVA
+Lesotho,266,LS / LSO,Liberia,231,LR / LBR,LS,LSO
+Libya,218,LY / LBY,Liechtenstein,423,LI / LIE,LY,LBY
+Lithuania,370,LT / LTU,Luxembourg,352,LU / LUX,LT,LTU
+Macau,853,MO / MAC,Macedonia,389,MK / MKD,MO,MAC
+Madagascar,261,MG / MDG,Malawi,265,MW / MWI,MG,MDG
+Malaysia,60,MY / MYS,Maldives,960,MV / MDV,MY,MYS
+Mali,223,ML / MLI,Malta,356,MT / MLT,ML,MLI
+Marshall Islands,692,MH / MHL,Mauritania,222,MR / MRT,MH,MHL
+Mauritius,230,MU / MUS,Mayotte,262,YT / MYT,MU,MUS
+Mexico,52,MX / MEX,Micronesia,691,FM / FSM,MX,MEX
+Moldova,373,MD / MDA,Monaco,377,MC / MCO,MD,MDA
+Mongolia,976,MN / MNG,Montenegro,382,ME / MNE,MN,MNG
+Montserrat,1-664,MS / MSR,Morocco,212,MA / MAR,MS,MSR
+Mozambique,258,MZ / MOZ,Myanmar,95,MM / MMR,MZ,MOZ
+Namibia,264,NA / NAM,Nauru,674,NR / NRU,NA,NAM
+Nepal,977,NP / NPL,Netherlands,31,NL / NLD,NP,NPL
+Netherlands Antilles,599,AN / ANT,New Caledonia,687,NC / NCL,AN,ANT
+New Zealand,64,NZ / NZL,Nicaragua,505,NI / NIC,NZ,NZL
+Niger,227,NE / NER,Nigeria,234,NG / NGA,NE,NER
+Niue,683,NU / NIU,North Korea,850,KP / PRK,NU,NIU
+Northern Mariana Islands,1-670,MP / MNP,Norway,47,NO / NOR,MP,MNP
+Oman,968,OM / OMN,Pakistan,92,PK / PAK,OM,OMN
+Palau,680,PW / PLW,Palestine,970,PS / PSE,PW,PLW
+Panama,507,PA / PAN,Papua New Guinea,675,PG / PNG,PA,PAN
+Paraguay,595,PY / PRY,Peru,51,PE / PER,PY,PRY
+Philippines,63,PH / PHL,Pitcairn,64,PN / PCN,PH,PHL
+Poland,48,PL / POL,Portugal,351,PT / PRT,PL,POL
+Puerto Rico,"1-787, 1-939",PR / PRI,Qatar,974,QA / QAT,PR,PRI
+Republic of the Congo,242,CG / COG,Reunion,262,RE / REU,CG,COG
+Romania,40,RO / ROU,Russia,7,RU / RUS,RO,ROU
+Rwanda,250,RW / RWA,Saint Barthelemy,590,BL / BLM,RW,RWA
+Saint Helena,290,SH / SHN,Saint Kitts and Nevis,1-869,KN / KNA,SH,SHN
+Saint Lucia,1-758,LC / LCA,Saint Martin,590,MF / MAF,LC,LCA
+Saint Pierre and Miquelon,508,PM / SPM,Saint Vincent and the Grenadines,1-784,VC / VCT,PM,SPM
+Samoa,685,WS / WSM,San Marino,378,SM / SMR,WS,WSM
+Sao Tome and Principe,239,ST / STP,Saudi Arabia,966,SA / SAU,ST,STP
+Senegal,221,SN / SEN,Serbia,381,RS / SRB,SN,SEN
+Seychelles,248,SC / SYC,Sierra Leone,232,SL / SLE,SC,SYC
+Singapore,65,SG / SGP,Sint Maarten,1-721,SX / SXM,SG,SGP
+Slovakia,421,SK / SVK,Slovenia,386,SI / SVN,SK,SVK
+Solomon Islands,677,SB / SLB,Somalia,252,SO / SOM,SB,SLB
+South Africa,27,ZA / ZAF,South Korea,82,KR / KOR,ZA,ZAF
+South Sudan,211,SS / SSD,Spain,34,ES / ESP,SS,SSD
+Sri Lanka,94,LK / LKA,Sudan,249,SD / SDN,LK,LKA
+Suriname,597,SR / SUR,Svalbard and Jan Mayen,47,SJ / SJM,SR,SUR
+Swaziland,268,SZ / SWZ,Sweden,46,SE / SWE,SZ,SWZ
+Switzerland,41,CH / CHE,Syria,963,SY / SYR,CH,CHE
+Taiwan,886,TW / TWN,Tajikistan,992,TJ / TJK,TW,TWN
+Tanzania,255,TZ / TZA,Thailand,66,TH / THA,TZ,TZA
+Togo,228,TG / TGO,Tokelau,690,TK / TKL,TG,TGO
+Tonga,676,TO / TON,Trinidad and Tobago,1-868,TT / TTO,TO,TON
+Tunisia,216,TN / TUN,Turkey,90,TR / TUR,TN,TUN
+Turkmenistan,993,TM / TKM,Turks and Caicos Islands,1-649,TC / TCA,TM,TKM
+Tuvalu,688,TV / TUV,U.S. Virgin Islands,1-340,VI / VIR,TV,TUV
+Uganda,256,UG / UGA,Ukraine,380,UA / UKR,UG,UGA
+United Arab Emirates,971,AE / ARE,United Kingdom,44,GB / GBR,AE,ARE
+United States,1,US / USA,Uruguay,598,UY / URY,US,USA
+Uzbekistan,998,UZ / UZB,Vanuatu,678,VU / VUT,UZ,UZB
+Vatican,379,VA / VAT,Venezuela,58,VE / VEN,VA,VAT
+Vietnam,84,VN / VNM,Wallis and Futuna,681,WF / WLF,VN,VNM
+Western Sahara,212,EH / ESH,Yemen,967,YE / YEM,EH,ESH

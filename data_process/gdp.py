@@ -1,10 +1,12 @@
 import pandas as pd
 import numpy as np
 
-from utils import get_latest_file
+from .utils import get_latest_file
+from .utils import get_country_iso_code
+from .utils import assign_rank
 
-def process_gdp():
-    directory = "../data/gdp"
+def process_gdp(home_dir):
+    directory = f"{home_dir}/data/gdp"
     path = get_latest_file(directory)
 
     # load and filter df
@@ -29,8 +31,19 @@ def process_gdp():
     # add back index value
     chg["QGDP"] = np.exp(pivot.ffill().iloc[-1])
     
-    # save gdp
-    chg.to_csv("../insights/gdp/latest.csv", header = True, index = True)
+    # import country reference
+    country_ref = get_country_iso_code()
 
-if __name__ == "__main__":
-    process_gdp()
+    # Change iso code to country name
+    chg = chg.merge(country_ref, right_index = True, left_index = True, how = "inner").fillna(0.)
+    chg.set_index("Country", inplace = True)
+
+    # Assign rank
+    for column in chg.columns:
+        chg[f"{column}Rank"] = assign_rank(chg[column], "descending")
+
+    # save gdp
+    chg.to_csv(f"{home_dir}/insights/gdp/latest.csv", header = True, index = True)
+
+# if __name__ == "__main__":
+#     process_gdp()

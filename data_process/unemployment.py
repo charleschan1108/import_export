@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
-from utils import get_latest_file
+
+from .utils import get_latest_file
+from .utils import get_country_iso_code
+from .utils import assign_rank
 
 def pct_chg_and_merge(df, measure):
     # pivot data and apply pct_change
@@ -15,9 +18,9 @@ def pct_chg_and_merge(df, measure):
 
     return latest_chg
 
-def process_unemployment():
+def process_unemployment(home_dir):
     # get latest file
-    directory = "../data/unemployment"
+    directory = f"{home_dir}/data/unemployment"
     path = get_latest_file(directory)
 
     # Read & filter data
@@ -31,11 +34,22 @@ def process_unemployment():
     q_chg = pct_chg_and_merge(q_df, "QuarterlyUnemploymentRate")
     y_chg = pct_chg_and_merge(y_df, "YearlyUnemploymentRate")
 
-    # save
-    q_chg.to_csv("../insights/unemployment_qoq/latest.csv", header = True, index = True)
-    y_chg.to_csv("../insights/unemployment_yoy/latest.csv", header = True, index = True)
+    # combined
+    chg = pd.concat([q_chg, y_chg], axis = 1)
 
-if __name__ == "__main__":
-    process_unemployment()
+    # convert iso code to country name
+    country_ref = get_country_iso_code()
+    combined = chg.merge(country_ref, left_index = True, right_index = True, how = "inner").fillna(0.)
+    combined.set_index("Country", inplace = True)
+
+    # assign rank
+    for column in combined.columns:
+        combined[f"{column}Rank"] = assign_rank(combined[column], "ascending")
+
+    # save
+    combined.to_csv(f"{home_dir}/insights/unemployment/latest.csv", header = True, index = True)
+
+# if __name__ == "__main__":
+#     process_unemployment()
 
 
