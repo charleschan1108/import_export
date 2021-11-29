@@ -54,15 +54,14 @@ def product_partner_scraper():    # countryName
             ex_r = req.get(ex_url, timeout=10)
             ex_demo = ex_r.text
             ex_soup = bs(ex_demo, "html.parser")
-
             pattern_ex_product = re.compile('.*Top Most Exported Products.*')
             ex_product_pos = ex_soup.find(text=pattern_ex_product)
             if ex_product_pos is not None:
                 ex_product_div = ex_product_pos.parent.parent
-                product_list = ex_product_div.find('ul')  # top most exported products
+                product_list = ex_product_div.find('ul').stripped_strings  # top most exported products
                 if product_list is not None:
                     for x in product_list:
-                        product_str = x.text.strip()
+                        product_str = x #.text.strip()
                         if product_str != '':
                             ex_top_products.append(product_str)
 
@@ -70,10 +69,10 @@ def product_partner_scraper():    # countryName
             ex_partner_pos = ex_soup.find(text=pattern_ex_partner)
             if ex_partner_pos is not None:
                 ex_partner_div = ex_partner_pos.parent.parent
-                partner_list = ex_partner_div.find('ul')  # top most exported partners
+                partner_list = ex_partner_div.find('ul').stripped_strings  # top most exported partners
                 if partner_list is not None:
                     for x in partner_list:
-                        partner_str = x.text.strip()
+                        partner_str = x #.text.strip()
                         if partner_str != '':
                             ex_top_partners.append(partner_str)
 
@@ -92,10 +91,10 @@ def product_partner_scraper():    # countryName
             im_product_pos = im_soup.find(text=pattern_im_product)
             if im_product_pos is not None:
                 im_product_div = im_product_pos.parent.parent
-                product_list = im_product_div.find('ul')  # top most imported products
+                product_list = im_product_div.find('ul').stripped_strings  # top most imported products
                 if product_list is not None:
                     for x in product_list:
-                        product_str = x.text.strip()
+                        product_str = x #.text.strip()
                         if product_str != '':
                             im_top_products.append(product_str)
 
@@ -103,10 +102,10 @@ def product_partner_scraper():    # countryName
             im_partner_pos = im_soup.find(text=pattern_im_partner)
             if im_partner_pos is not None:
                 im_partner_div = im_partner_pos.parent.parent
-                partner_list = im_partner_div.find('ul')  # top most imported partners
+                partner_list = im_partner_div.find('ul').stripped_strings  # top most imported partners
                 if partner_list is not None:
                     for x in partner_list:
-                        partner_str = x.text.strip()
+                        partner_str = x #.text.strip()
                         if partner_str != '':
                             im_top_partners.append(partner_str)
 

@@ -51,8 +51,8 @@ def main():
         print("Crawling unemployment data...")
         download_unemployment_rate(home_dir)
 
-        print("Crawling trade partner data...")
-        scrape_trade_partners(home_dir)
+        # print("Crawling trade partner data...")
+        # scrape_trade_partners(home_dir)
 
         print("Crawling inflation data...")
         crawl_inflation_data(home_dir)
@@ -64,20 +64,20 @@ def main():
         download_covid_data(home_dir)
 
         # Process
-        print("Processing trade data..")
-        process_trade(home_dir)
+        # print("Processing trade data..")
+        # process_trade(home_dir)
 
-        print("processing unemployment daata..")
-        process_unemployment(home_dir)
+        # print("processing unemployment daata..")
+        # process_unemployment(home_dir)
 
-        print("processing inflation data..")
-        process_inflation(home_dir)
+        # print("processing inflation data..")
+        # process_inflation(home_dir)
 
-        print("processing gdp data..")
-        process_gdp(home_dir)
+        # print("processing gdp data..")
+        # process_gdp(home_dir)
 
-        print("processing covid data..")
-        process_covid(home_dir)
+        # print("processing covid data..")
+        # process_covid(home_dir)
 
     # Display
     if bool(int(args.equal_weight)):
