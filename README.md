@@ -5,7 +5,10 @@ This package is to support business to make decision pertaining to their trading
 ## Set up
 It is better to create a virtual environment for this project since it will not affect your existing python environment.
 
-### Step 0: Clone the repository and get the source code ready in your computer
+### Step 0: Download ChromeDriver
+Go to https://chromedriver.chromium.org/ and download the suitable version chromedriver for your computer. And place it in the home directory of this repo.
+
+### Step 1: Clone the repository and get the source code ready in your computer
 ```
 # clone repo
 git clone https://github.com/charleschan1108/import_export.git
@@ -14,17 +17,17 @@ git clone https://github.com/charleschan1108/import_export.git
 cd import_export
 ```
 
-### Step 1: Create a virtual environment named env
+### Step 2: Create a virtual environment named env
 ```
 python -m venv env
 ```
 
-### Step 2: Activate the env virtual environment
+### Step 3: Activate the env virtual environment
 ```
 source env/bin/activate
 ```
 
-### Step 3: Install packages
+### Step 4: Install packages
 ```
 pip install selenium
 pip install pandas
