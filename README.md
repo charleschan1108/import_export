@@ -5,6 +5,15 @@ This package is to support business to make decision pertaining to their trading
 ## Set up
 It is better to create a virtual environment for this project since it will not affect your existing python environment.
 
+### Step 0: Clone the repository and get the source code ready in your computer
+```
+# clone repo
+git clone https://github.com/charleschan1108/import_export.git
+
+# change directory
+cd import_export
+```
+
 ### Step 1: Create a virtual environment named env
 ```
 python -m venv env
@@ -21,6 +30,7 @@ pip install selenium
 pip install pandas
 pip install numpy
 pip install beautifulsoup4
+pip install requests
 ```
 
 ## Manuals
