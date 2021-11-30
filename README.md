@@ -54,17 +54,38 @@ python main.py --refresh 0 --country China
 
 Sample output:
 ```
-YearlyChange_people_fully_vaccinatedRank  YearlyChange_total_casesRank  YearlyChange_total_deathsRank  ...  YearlyUnemploymentRateRank  GdpTradeCompRank  Overall Rank
-Country                                                                                                               ...                                                            
-Japan                                              46.0                          20.0                           32.0  ...                         2.0                43             1
-South Korea                                       122.0                         167.0                          152.0  ...                         6.0                18             2
-United States                                     227.0                         116.0                          112.0  ...                        27.0                47             3
+For China, the best export partners in short term (quarterly data):
+              Top exported products  QuarterlyChange_people_fully_vaccinatedRank  ...  GdpTradeCompRank  Overall Rank
+Japan                           NaN                                        113.0  ...                43             1
+South Korea                      []                                         71.0  ...                18             2
+United States                    []                                        189.0  ...                47             3
 
-YearlyChange_people_fully_vaccinatedRank  YearlyChange_total_casesRank  YearlyChange_total_deathsRank  ...  YearlyUnemploymentRateRank  GdpTradeCompRank  Overall Rank
-Country                                                                                                               ...                                                            
-Japan                                              46.0                          20.0                           32.0  ...                         2.0                43             1
-South Korea                                       122.0                         167.0                          152.0  ...                         6.0                18             2
-United States                                     227.0                         116.0                          112.0  ...                        27.0                47             3
+[3 rows x 18 columns]
+Check 2021-12-01T00:36:13.910891_export.csv for more details.
+For China, the best import partners in short term (quarterly data):
+                                           Top imported products  QuarterlyChange_people_fully_vaccinatedRank  ...  GdpTradeCompRank  Overall Rank
+Japan                                                        NaN                                        113.0  ...                43             1
+South Korea    ['Mineral fuels and oils', 'Electrical machine...                                         71.0  ...                18             2
+United States  ['Electrical machinery and equipment', 'Machin...                                        189.0  ...                47             3
+
+[3 rows x 18 columns]
+Check 2021-12-01T00:36:13.910891_import.csv for more details.
+For China, the best export partners in long term (yearly data):
+              Top exported products  YearlyChange_people_fully_vaccinatedRank  ...  GdpTradeCompRank  Overall Rank
+Japan                           NaN                                      46.0  ...                43             1
+South Korea                      []                                     122.0  ...                18             2
+United States                    []                                     227.0  ...                47             3
+
+[3 rows x 18 columns]
+Check 2021-12-01T00:36:13.939796_export.csv for more details.
+For China, the best import partners in long term (yearly data):
+                                           Top imported products  YearlyChange_people_fully_vaccinatedRank  ...  GdpTradeCompRank  Overall Rank
+Japan                                                        NaN                                      46.0  ...                43             1
+South Korea    ['Mineral fuels and oils', 'Electrical machine...                                     122.0  ...                18             2
+United States  ['Electrical machinery and equipment', 'Machin...                                     227.0  ...                47             3
+
+[3 rows x 18 columns]
+Check 2021-12-01T00:36:13.939796_import.csv for more details.
 ```
 
 ## Application 2: For any country
@@ -75,31 +96,38 @@ python main.py --refresh 0
 
 Sample output:
 ```
-QuarterlyChange_people_fully_vaccinatedRank  QuarterlyChange_total_casesRank  QuarterlyChange_total_deathsRank  ...  QuarterlyUnemploymentRateRank  GdpTradeCompRank  Overall Rank
-Country                                                                                                                         ...                                                               
-Czech Republic                                          NaN                              NaN                               NaN  ...                            4.0                19             1
-Japan                                                 113.0                             57.0                             106.0  ...                            5.0                43             2
-Saudi Arabia                                          133.0                             45.0                              69.0  ...                            NaN                 5             3
-Indonesia                                              48.0                             54.0                              68.0  ...                            NaN                14             4
-Colombia                                               85.0                             71.0                              72.0  ...                           35.0                36             5
-South Korea                                            71.0                            209.0                             214.0  ...                            6.0                18             6
-Chile                                                 148.0                            110.0                              87.0  ...                           32.0                20             7
-Sweden                                                179.0                            100.0                              79.0  ...                           33.0                21             8
-Italy                                                 176.0                            116.0                              84.0  ...                           34.0                11             9
-Switzerland                                           153.0                            173.0                             100.0  ...                            2.0                 9            10
+In general, the best trade partners in short term (quarterly data) are
+                                            Top exported products                              Top imported products  ...  GdpTradeCompRank  Overall Rank
+Czech Republic                                                NaN                                                NaN  ...                19             1
+Japan                                                         NaN                                                NaN  ...                43             2
+Saudi Arabia                                                  NaN                                                NaN  ...                 5             3
+Indonesia       ['Mineral fuels & oils', 'Animal/vegetable fat...  ['Mineral fuels and oils', 'Machinery and mech...  ...                14             4
+Colombia        ['Mineral oils and fuels', 'Coffee, tea, mate,...  ['Machinery & Mechanical Appliances', 'Electri...  ...                36             5
+South Korea                                                    []  ['Mineral fuels and oils', 'Electrical machine...  ...                18             6
+Chile           ['Ores, slag and ash', 'Copper and articles th...  ['Mineral fuels and oils', 'Vehicles', 'Machin...  ...                20             7
+Sweden                                                        NaN                                                NaN  ...                21             8
+Luxembourg                                                    NaN                                                NaN  ...                33             9
+Italy                                                         NaN                                                NaN  ...                11            10
 
-YearlyChange_people_fully_vaccinatedRank  YearlyChange_total_casesRank  YearlyChange_total_deathsRank  ...  YearlyUnemploymentRateRank  GdpTradeCompRank  Overall Rank
-Country                                                                                                                ...                                                            
-Japan                                               46.0                          20.0                           32.0  ...                         2.0                43             1
-Indonesia                                           53.0                          15.0                           22.0  ...                         NaN                14             2
-Italy                                               48.0                          82.0                           50.0  ...                        31.0                11             3
-France                                              17.0                          84.0                           49.0  ...                        26.0                44             4
-Czech Republic                                       NaN                           NaN                            NaN  ...                         1.0                19             5
-Sweden                                             143.0                          51.0                           38.0  ...                        29.0                21             6
-Chile                                              103.0                          81.0                           55.0  ...                        33.0                20             7
-Saudi Arabia                                       135.0                          64.0                          108.0  ...                         NaN                 5             8
-Portugal                                           221.0                          67.0                           26.0  ...                        24.0                37             9
-Spain                                              120.0                          53.0                           44.0  ...                        35.0                38            10
+[10 rows x 19 columns]
+Check 2021-12-01T00:38:51.211457_general_short term (quarterly data).csv for more details.
+
+
+In general, the best trade partners in long term (yearly data) are
+                                            Top exported products                              Top imported products  ...  GdpTradeCompRank  Overall Rank
+Japan                                                         NaN                                                NaN  ...                43             1
+Indonesia       ['Mineral fuels & oils', 'Animal/vegetable fat...  ['Mineral fuels and oils', 'Machinery and mech...  ...                14             2
+Italy                                                         NaN                                                NaN  ...                11             3
+France                                                        NaN                                                NaN  ...                44             4
+Czech Republic                                                NaN                                                NaN  ...                19             5
+Sweden                                                        NaN                                                NaN  ...                21             6
+Saudi Arabia                                                  NaN                                                NaN  ...                 5             7
+Chile           ['Ores, slag and ash', 'Copper and articles th...  ['Mineral fuels and oils', 'Vehicles', 'Machin...  ...                20             8
+Portugal                                                      NaN                                                NaN  ...                37             9
+Spain                                                         NaN                                                NaN  ...                38            10
+
+[10 rows x 19 columns]
+Check 2021-12-01T00:38:51.232216_general_long term (yearly data).csv for more details.
 
 ```
 

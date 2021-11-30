@@ -50,8 +50,8 @@ def compute_overall_rank(df, weighting = None):
     return assign_rank(res, "ascending")
 
 def display_with_country(df, perspective_country, term, topn = 10):
-    trade_parter = get_trade_partner()
-    pc_df = trade_parter[trade_parter["Country"] == perspective_country]
+    trade_partner = get_trade_partner()
+    pc_df = trade_partner[trade_partner["Country"] == perspective_country]
 
     if pc_df.shape[0] < 1:
         print(f"Country {perspective_country} is not found in database.")
@@ -65,19 +65,24 @@ def display_with_country(df, perspective_country, term, topn = 10):
     exp_df = df[df.index.isin(top_exported)]
     imp_df = df[df.index.isin(top_imported)]
 
+    # set index of trade_partner as Country
+    trade_partner.set_index("Country", inplace = True)
+
     # compute overall rank
     run_time = datetime.now().isoformat()
 
     print(f"For {perspective_country}, the best export partners in {term}:")
     exp_df["Overall Rank"] = compute_overall_rank(exp_df)
-    exp_df = exp_df.sort_values("Overall Rank", ascending = True)
+    exp_df = trade_partner[["Top exported products"]].merge(exp_df.sort_values("Overall Rank", ascending = True),
+                left_index = True, right_index = True, how = "right")
     print(exp_df.head(topn))
     print(f"Check {run_time}_export.csv for more details.")
     exp_df.to_csv(f"{run_time}_export_{term}.csv", header = True, index = True)
 
     print(f"For {perspective_country}, the best import partners in {term}:")
     imp_df["Overall Rank"] = compute_overall_rank(imp_df)
-    imp_df = imp_df.sort_values("Overall Rank", ascending = True)
+    imp_df = trade_partner[["Top imported products"]].merge(imp_df.sort_values("Overall Rank", ascending = True),
+                left_index = True, right_index = True, how = "right")
     print(imp_df.head(topn))
     print(f"Check {run_time}_import.csv for more details.")
     imp_df.to_csv(f"{run_time}_import_{term}.csv", header = True, index = True)
@@ -85,12 +90,15 @@ def display_with_country(df, perspective_country, term, topn = 10):
     # TODO: add plot
 
 def display_without_country(df, term, topn = 10):
+    trade_parter = get_trade_partner().set_index("Country")[["Top exported products", 'Top imported products']]
+
     run_time = datetime.now().isoformat()
 
     # compute overall rank
     print(f"In general, the best trade partners in {term} are")
     df["Overall Rank"] = compute_overall_rank(df)
-    df = df.sort_values("Overall Rank", ascending = True)
+    df = trade_parter.merge(df.sort_values("Overall Rank", ascending = True),
+            left_index = True, right_index = True, how = "right")
     print(df.head(topn))
     print(f"Check {run_time}_general_{term}.csv for more details.\n\n")
 

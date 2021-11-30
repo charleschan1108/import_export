@@ -13,7 +13,7 @@ def get_trade_partner():
     df.rename(columns = {"Country name": "Country"}, inplace = True)
 
     for column in df.columns:
-        df[column] = df[column].apply(lambda x: x.replace("USA", "United States"))
+        df[column] = df[column].apply(lambda x: x.replace("USA", "United States").replace(">", ""))
 
     return df
 
