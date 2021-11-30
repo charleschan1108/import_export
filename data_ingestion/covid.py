@@ -1,3 +1,18 @@
+"""
+covid.py
+Author: 
+    Charles Chan, Hsueh-i Lu, Rui Pan, Yaheng Wang, Yigang Zhou, Jiaqi Song
+
+Description: 
+    The script contains function to crawl covid data from https://ourworldindata.org
+
+Import by:
+    data_ingestion/__init__.py
+
+Import:
+    Nil
+"""
+
 from selenium import webdriver
 import time
 import os
@@ -15,6 +30,18 @@ def safe_remove_file(path):
         pass
     return
 
+"""
+Function:
+    download_covid_data
+Purpose:
+    Use selenium perform a chain of actions to download data from owid, that is, first scroll
+    down to the bottom and get the DOM to load all the components on the website, then find the 
+    buttons lead to the link to download the daily covid data for all countries in the world.
+Inputs:
+    :params: home_dir -- the home directory for the function to find the right directory to save data
+Output:
+    a csv saved in the data directory.
+"""
 def download_covid_data(home_dir):
     url = "https://ourworldindata.org/explorers/coronavirus-data-explorer"
     directory = os.path.join(home_dir, "data/covid")

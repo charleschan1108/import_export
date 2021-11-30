@@ -4,3 +4,4 @@ from .trade_partner import scrape_trade_partners
 from .inflation import crawl_inflation_data
 from .gdp import download_gdp
 from .covid import download_covid_data
+from .country_reference import crawl_country_code

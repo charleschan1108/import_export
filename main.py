@@ -10,6 +10,7 @@ from data_ingestion import scrape_trade_partners
 from data_ingestion import crawl_inflation_data
 from data_ingestion import download_gdp
 from data_ingestion import download_covid_data
+from data_ingestion import crawl_country_code
 
 from data_process import process_trade
 from data_process import process_covid
@@ -45,6 +46,9 @@ def main():
     # Preprocess
     if bool(int(refresh)):
         # Crawl
+        print("Crawling country reference data..")
+        crawl_country_code(home_dir)
+
         print("Crawling trade data...")
         download_trade_data(home_dir)
 
