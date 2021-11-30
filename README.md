@@ -40,7 +40,7 @@ pip install requests
 
 Currently, this package has two applications:
 1. For a specified country, which country is the best partners for export/import during and after this pandemic?
-2. In general, which country is the best partners for trade of goods and services during and after this pandemic
+2. In general, which country is the best partners for trade of goods and services during and after this pandemic?
 
 ## Application 1: For specified country
 ```

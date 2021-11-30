@@ -64,10 +64,10 @@ def idx1():
     import pandas as pd
     import numpy as np
 
-    vaccine = pd.read_excel("/Users/ruipan/Desktop/idx1/Vaccine.xlsx",sheet_name = "owid-covid-data")
+    # vaccine = pd.read_excel("/Users/ruipan/Desktop/idx1/Vaccine.xlsx",sheet_name = "owid-covid-data")
 
-    data2 = vaccine[['location','date','hosp_patients_per_million', 'weekly_hosp_admissions_per_million','people_fully_vaccinated_per_hundred',
-           'population','population_density','median_age','hospital_beds_per_thousand']]
+    # data2 = vaccine[['location','date','hosp_patients_per_million', 'weekly_hosp_admissions_per_million','people_fully_vaccinated_per_hundred',
+    #        'population','population_density','median_age','hospital_beds_per_thousand']]
 
     #process type
 
@@ -88,43 +88,45 @@ def idx1():
     data["case_rate_increase_month"] = data["Cases(28-Day)"]/(data["Cases(Total)"]-data["Cases(28-Day)"])
     data["death_rate_increase_month"]=data["Death(28-Day)"]/(data["Death(Total)"]-data["Death(28-Day)"])
 
-    data2.loc[:,"increase_rate_week"] =data2["weekly_hosp_admissions_per_million"]/(data2["hosp_patients_per_million"]-data2["weekly_hosp_admissions_per_million"])
+    data.to_csv("../data/covid.csv", header = True, index = True)
 
-    data2.loc[:,"admission_rate"] = data2["hosp_patients_per_million"]/(data2["population"]/1000000)
+    # data2.loc[:,"increase_rate_week"] =data2["weekly_hosp_admissions_per_million"]/(data2["hosp_patients_per_million"]-data2["weekly_hosp_admissions_per_million"])
 
-    #28days
+    # data2.loc[:,"admission_rate"] = data2["hosp_patients_per_million"]/(data2["population"]/1000000)
 
-    from datetime import date,timedelta
-    today = date.today()
+    # #28days
 
-    d = today - timedelta(days=28)
+    # from datetime import date,timedelta
+    # today = date.today()
 
-    data2.loc[:,"date"]=[i.date() for i in data2["date"]]
+    # d = today - timedelta(days=28)
 
-    data2_28=data2.loc[data2["date"]>d,:]
+    # data2.loc[:,"date"]=[i.date() for i in data2["date"]]
 
-    pos_factor =data2_28[["location","people_fully_vaccinated_per_hundred","hospital_beds_per_thousand","admission_rate","population"]].groupby(by ="location").agg("mean")
+    # data2_28=data2.loc[data2["date"]>d,:]
 
-    neg_factor= data[["Country","case_rate_increase_month","death_rate_increase_month","Cases(28-Day)"]]
+    # pos_factor =data2_28[["location","people_fully_vaccinated_per_hundred","hospital_beds_per_thousand","admission_rate","population"]].groupby(by ="location").agg("mean")
 
-    factor28=pd.merge(neg_factor,pos_factor,left_on = 'Country', right_on = 'location',how = "left")
+    # neg_factor= data[["Country","case_rate_increase_month","death_rate_increase_month","Cases(28-Day)"]]
 
-    factor28["Infection_rate"]=factor28["Cases(28-Day)"]/factor28["population"]
+    # factor28=pd.merge(neg_factor,pos_factor,left_on = 'Country', right_on = 'location',how = "left")
 
-    #cumulative
+    # factor28["Infection_rate"]=factor28["Cases(28-Day)"]/factor28["population"]
 
-    pos_factor2 =data2[["location","people_fully_vaccinated_per_hundred","hospital_beds_per_thousand","admission_rate","population"]].groupby(by ="location").agg("mean")
+    # #cumulative
 
-    neg_factor2= data[["Country","Cases(Total)"]]
+    # pos_factor2 =data2[["location","people_fully_vaccinated_per_hundred","hospital_beds_per_thousand","admission_rate","population"]].groupby(by ="location").agg("mean")
 
-    factortotal=pd.merge(neg_factor2,pos_factor2,left_on = 'Country', right_on = 'location',how = "left")
+    # neg_factor2= data[["Country","Cases(Total)"]]
 
-    factortotal["Infection_rate"]=factortotal["Cases(Total)"]/factortotal["population"]
+    # factortotal=pd.merge(neg_factor2,pos_factor2,left_on = 'Country', right_on = 'location',how = "left")
 
-    #display 2 tables(28-day and total)
+    # factortotal["Infection_rate"]=factortotal["Cases(Total)"]/factortotal["population"]
 
-    idx_28 = factor28["Infection_rate"]/(factor28["people_fully_vaccinated_per_hundred"]*factor28["hospital_beds_per_thousand"])
+    # #display 2 tables(28-day and total)
 
-    idx_total = factortotal["Infection_rate"]/(factortotal["people_fully_vaccinated_per_hundred"]*factortotal["hospital_beds_per_thousand"])
+    # idx_28 = factor28["Infection_rate"]/(factor28["people_fully_vaccinated_per_hundred"]*factor28["hospital_beds_per_thousand"])
 
-    return idx_28,idx_total,factor28,factortotal
+    # idx_total = factortotal["Infection_rate"]/(factortotal["people_fully_vaccinated_per_hundred"]*factortotal["hospital_beds_per_thousand"])
+
+    # return idx_28,idx_total,factor28,factortotal
