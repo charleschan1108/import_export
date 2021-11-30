@@ -82,6 +82,8 @@ def display_with_country(df, perspective_country, term, topn = 10):
     print(f"Check {run_time}_import.csv for more details.")
     imp_df.to_csv(f"{run_time}_import_{term}.csv", header = True, index = True)
 
+    # TODO: add plot
+
 def display_without_country(df, term, topn = 10):
     run_time = datetime.now().isoformat()
 
@@ -91,6 +93,11 @@ def display_without_country(df, term, topn = 10):
     df = df.sort_values("Overall Rank", ascending = True)
     print(df.head(topn))
     print(f"Check {run_time}_general_{term}.csv for more details.\n\n")
+
+    df.to_csv(f"{run_time}_general_{term}.csv", header = True, index = True)
+
+    # TO DO: add plot
+
 
 def app(home_dir, perspective_country = None, weighting = None, topn = 10):
     # load insights

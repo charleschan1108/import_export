@@ -1,3 +1,18 @@
+"""
+covid_death.py
+Author: 
+    Charles Chan, Hsueh-i Lu, Rui Pan, Yaheng Wang, Yigang Zhou, Jiaqi Song
+
+Description: 
+    The script contains function to crawl covid data from https://www.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6
+
+Import by:
+    data_ingestion/__init__.py
+
+Import:
+    Nil
+"""
+
 def idx1():
     #data preparation
     from selenium import webdriver

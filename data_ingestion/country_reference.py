@@ -13,7 +13,7 @@ Import:
     crawl_country_code_ref from base.py
 """
 
-from base import crawl_country_code_ref
+from .base import crawl_country_code_ref
 
 """
 Function:
