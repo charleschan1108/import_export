@@ -33,6 +33,12 @@ def assign_rank(series, order):
 
     return rank + 1
 
+def get_country_iso_code():
+    cur_dir = os.path.dirname(__file__)
+    df = pd.read_csv(f"{cur_dir}/../data/country_code/country_code_reference.csv")
+    df = df.drop_duplicates(["Country", "exdIso"])
+    return df.set_index("exdIso")["Country"]
+
 if __name__ == "__main__":
     df = get_trade_partner()
     print(df)
