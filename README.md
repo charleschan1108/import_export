@@ -200,4 +200,4 @@ All the crawlers are stored in the data_ingestion module. They will crawl the de
 All the data processors are stored in the data_process module. They will process the raw data according to the logic specified and save the output at the insights directory.
 
 ### Application
-Provide users with API to interact with the insights uncovered in the previous part.
+Provide users with commands to interact with the insights uncovered in the previous part.
