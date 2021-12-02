@@ -155,7 +155,7 @@ Users can specify their weighting in config.py:
 ```
 # config.py
 
-weighing = {
+weighting = {
     "vaccinated_rateRank": 0.2,
     "casesRank": 0.2,
     "deathsRank": 0.2,
