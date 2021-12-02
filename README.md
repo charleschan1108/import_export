@@ -210,6 +210,8 @@ Provide users with commands to interact with the insights uncovered in the previ
 
 ### Authors
 
+For more details, please contact
+
 * Charles Chan chunyiuc@andrew.cmu.edu
 * Hsueh-i Lu hsuehil@andrew.cmu.edu
 * Jiaqi Song jiaqis@andrew.cmu.edu
