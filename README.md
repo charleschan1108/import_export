@@ -138,7 +138,7 @@ Check 2021-12-01T00:38:51.232216_general_long term (yearly data).csv for more de
 The above example assume user put equal weight on factors:
 * number of covid case
 * number of death by covid
-* vaccinated rate
+* vaccinated rate (people_fully_vacinated / population)
 * GDP growth
 * Inflation
 * Export/Import/Net Trade values
