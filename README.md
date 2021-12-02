@@ -39,7 +39,7 @@ pip install requests
 ## Manuals
 
 Currently, the library support businesses to answer two questions (2 applications):
-1. For a specified country, which country is the best partners for export/import during and after this pandemic?
+1. For a specific country, which country is the best partners for export/import during and after this pandemic?
 2. In general, which country is the best partners for trade of goods and services during and after this pandemic?
 
 based on different types of data:
