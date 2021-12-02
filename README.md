@@ -34,6 +34,7 @@ pip install pandas
 pip install numpy
 pip install beautifulsoup4
 pip install requests
+pip install matplotlib
 ```
 
 ## Manuals
