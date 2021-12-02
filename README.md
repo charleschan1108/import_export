@@ -1,6 +1,6 @@
 # import_export
 
-This package is designed to support companies to make informed decision pertaining to their cross boarder trading activities, especially during the pandemic.
+This package is designed to support companies from no matter what countries to make informed decision pertaining to their cross boarder trading activities, especially during the pandemic.
 
 ## Set up
 It is better to create a virtual environment for this project since it will not affect your existing python environment.
