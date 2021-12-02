@@ -44,7 +44,7 @@ Currently, this package has two applications:
 
 based on different types of data:
 * Covid (death, case and vaccination)
-* macroeconomic data (gdp, unemployment rate, inflatin rate, value of export/import/net trafe in goods)
+* Macroeconomics data (gdp, unemployment rate, inflatin rate, value of export/import/net trafe in goods)
 * Countries trade profile
 
 
