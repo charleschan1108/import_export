@@ -146,8 +146,8 @@ The above example assume user put equal weight on factors:
 * number of death by covid
 * vaccinated rate (people_fully_vacinated / population)
 * GDP growth
-* Inflation
-* Export/Import/Net Trade values
+* Inflation rate
+* Value of export/import/net trade in good
 * Net trade / GDP
 * Unemployment rate
 
