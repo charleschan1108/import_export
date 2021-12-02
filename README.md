@@ -40,7 +40,7 @@ pip install matplotlib
 ## Manuals
 
 Currently, the library support businesses to answer two questions (2 applications):
-1. For a specific country, which country is the best partners for export/import during and after the pandemic?
+1. For a specific country, which country is the best partner for export/import during and after the pandemic?
 2. In general, which country is the best partner for trade of goods and services during and after the pandemic?
 
 The package will be based on different types of data:
