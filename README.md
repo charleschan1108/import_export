@@ -44,9 +44,10 @@ Currently, this package has two applications:
 
 based on different types of data:
 * Covid (death, case and vaccination)
-* Macroeconomics data (gdp, unemployment rate, inflatin rate, value of export/import/net trafe in goods)
+* Macroeconomics data (gdp, unemployment rate, inflation rate, value of export/import/net trafe in goods)
 * Countries trade profile
 
+to compute a rank for more than 230 countries, so that businesses can use the rank as a reference to choose the best country to look for trading partners.
 
 ## Application 1: For specified country
 ```
