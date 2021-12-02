@@ -38,13 +38,13 @@ pip install requests
 
 ## Manuals
 
-Currently, this package has two applications:
+Currently, the library support businesses to answer two questions (2 applications):
 1. For a specified country, which country is the best partners for export/import during and after this pandemic?
 2. In general, which country is the best partners for trade of goods and services during and after this pandemic?
 
 based on different types of data:
 * Covid (death, case and vaccination)
-* Macroeconomics data (gdp, unemployment rate, inflation rate, value of export/import/net trafe in goods)
+* Macroeconomics data (gdp, unemployment rate, inflation rate, value of export/import/net trade in goods)
 * Countries trade profile
 
 to compute a rank for more than 230 countries, so that businesses can use the rank as a reference to choose the best country to look for trading partners.
