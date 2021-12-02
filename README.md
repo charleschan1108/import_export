@@ -42,6 +42,12 @@ Currently, this package has two applications:
 1. For a specified country, which country is the best partners for export/import during and after this pandemic?
 2. In general, which country is the best partners for trade of goods and services during and after this pandemic?
 
+based on different types of data:
+* Covid (death, case and vaccination)
+* macroeconomic data (gdp, unemployment rate, inflatin rate, value of export/import/net trafe in goods)
+* Countries trade profile
+
+
 ## Application 1: For specified country
 ```
 # With data being refreshed
