@@ -203,9 +203,10 @@ All the data processors are stored in the data_process module. They will process
 Provide users with commands to interact with the insights uncovered in the previous part.
 
 ### Authors
-Charles Chan chunyiuc@andrew.cmu.edu
-Hsueh-i Lu hsuehil@andrew.cmu.edu
-Rui Pan ruipan@andrew.cmu.edu
-Yaheng Wang yahengw@andrew.cmu.edu
-Yigang Zhou yigangz@andrew.cmu.edu
-Jiaqi Song jiaqis@andrew.cmu.edu
+
+* Charles Chan chunyiuc@andrew.cmu.edu
+* Hsueh-i Lu hsuehil@andrew.cmu.edu
+* Jiaqi Song jiaqis@andrew.cmu.edu
+* Rui Pan ruipan@andrew.cmu.edu
+* Yaheng Wang yahengw@andrew.cmu.edu
+* Yigang Zhou yigangz@andrew.cmu.edu
