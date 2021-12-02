@@ -1,9 +1,40 @@
+"""
+data_process/inflation.py
+Author: 
+    Charles Chan, Hsueh-i Lu, Rui Pan, Yaheng Wang, Yigang Zhou, Jiaqi Song
+
+Description: 
+    The script contains process_inflation and _process_inflation functions to 
+    combine month of month and year of year inflation.
+
+Import by:
+    data_process/__init__.py
+
+Import:
+    assign_rank from utils.py
+    get_latest_file from utils.py
+"""
+
 import pandas as pd
 import numpy as np
 
 from .utils import get_latest_file
 from .utils import assign_rank
 
+"""
+Function:
+    _process_inflation
+Purpose:
+    process the latest file of inflation data from data/{dir_basename}, where dir_basename
+    can inflation_mom or inflation_yoy.
+    Then assign rank for the inflation rate.
+Inputs:
+    :params: home_dir -- the home directory for the function to find the right directory to save data
+    :params: dir_basename -- inflation_yoy or inflation_mom
+    :params: measure -- Prefix to add to the column name of the dataframe to be returned
+Output:
+    A pandas data frame that contains inflation data
+"""
 def _process_inflation(home_dir, dir_basename, measure):
     """
         Input: directory basename
@@ -25,6 +56,17 @@ def _process_inflation(home_dir, dir_basename, measure):
     
     return df[f"{measure}Inflation"]
 
+"""
+Function:
+    process_inflation
+Purpose:
+    Run _process_inflation for inflation_mom and inflation_yoy and combine the two before saving
+    as csv
+Inputs:
+    :params: home_dir -- the home directory for the function to find the right directory to save data
+Output:
+    a csv saved in the insights/gdp directory.
+"""
 def process_inflation(home_dir):
     # process MoM inflation
     mom = _process_inflation(home_dir, "inflation_mom", "Quarterly")

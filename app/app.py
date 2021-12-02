@@ -1,3 +1,19 @@
+"""
+app/app.py
+Author: 
+    Charles Chan, Hsueh-i Lu, Rui Pan, Yaheng Wang, Yigang Zhou, Jiaqi Song
+
+Description: 
+    This script here is to store all functions related to the applications of our product.
+
+    Application:
+        Compute the overall rank according customised or equal weighting
+        Some visualization for the top recommended trading countries
+
+Import by:
+    main.py
+"""
+
 import pandas as pd
 import numpy as np
 
@@ -37,6 +53,23 @@ insights_dir = [
     "unemployment",
 ]
 
+"""
+Function:
+    plot
+Purpose:
+    For the top 10 trading partners countries, visualize the pandemic and the trading situation
+Inputs:
+    :param: df -- retrieved raw data from data directory
+    :param: column -- which column to plot. column chosen to be the value of the pivot table
+    :param: datecol -- column chosen to be the index of the pivot table
+    :param: loccol -- series chosen to be the columns of the pivot table
+    :param: title (nullable) -- Title for the plot
+    :param: savepath (nullable) -- save path for the plot
+    :param: ylabel (nullable) -- ylabel for the plot
+
+Output:
+    Save the plot to the savepath
+"""
 def plot(df, column, datecol = "date", loccol = "location", title = None, savepath = None, ylabel = None):
     plot_df = df.pivot(index = datecol, columns = loccol, values = column)
     f = plot_df.plot.line()
@@ -51,6 +84,17 @@ def plot(df, column, datecol = "date", loccol = "location", title = None, savepa
     if savepath is not None:
         f.figure.savefig(savepath)
 
+"""
+Function:
+    plot_raw_data
+Purpose:
+    Preprocess the raw data first before passing into the plot function for visualization.
+Inputs:
+    :params: home_dir -- the home directory for the function to find the right directory to save data
+    :params: countries -- Which countries data to be plot (Top 10 from the analysis measured by the overall rank)
+Output:
+    Save the plot to the savepath
+"""
 def plot_raw_data(home_dir, countries):
     # Load covid data
     covid = pd.read_csv(f"{home_dir}/data/covid/owid-covid-data.csv")
@@ -90,7 +134,18 @@ def plot_raw_data(home_dir, countries):
     plot(NTRADE, "Value", datecol = "TIME", loccol = "LOCATION", title = "Top 10 Countries Value of NET TRADE Goods", ylabel = "$USD (Billion)",
         savepath = f"{home_dir}/Top10_ntrade.png")
 
-
+"""
+Function:
+    compute_overall_rank
+Purpose:
+    Compute the overall rank according to other series using weighted average or equal weight average of the rank of
+    other series.
+Inputs:
+    :params: df -- filtered data frame of other ranked series
+    :params: weighting (nullable) -- None for computing equal weighted average of rank or input a dictionary of weighting
+Output:
+    df with overall rank assigned.
+"""
 def compute_overall_rank(df, weighting = None):
     if weighting is not None:
         dfs = []
@@ -105,6 +160,20 @@ def compute_overall_rank(df, weighting = None):
 
     return assign_rank(res, "ascending")
 
+"""
+Function:
+    display_with_country
+Purpose:
+    Display the final results to the console for a specified country (perspective_country)
+Inputs:
+    :params: df -- filtered data frame of other ranked series
+    :params: perspective_country -- country of interest
+    :params: term -- short or long term. Only affect the logging
+    :params: home_dir -- the home directory for the function to find the right directory to save data
+    :params: topn -- how many results to display in the final output.
+Output:
+    Results displayed in the console.
+"""
 def display_with_country(df, perspective_country, term, home_dir, topn = 10):
     trade_partner = get_trade_partner()
     pc_df = trade_partner[trade_partner["Country"] == perspective_country]
@@ -143,10 +212,23 @@ def display_with_country(df, perspective_country, term, home_dir, topn = 10):
     print(f"Check {run_time}_import.csv for more details.")
     imp_df.to_csv(f"{run_time}_import_{term}.csv", header = True, index = True)
 
-    # TODO: add plot
+    # plot results
     countries = list(set(exp_df.index[:5].tolist() + imp_df.index[:5].tolist()))
     plot_raw_data(home_dir, countries)
 
+"""
+Function:
+    display_with_country
+Purpose:
+    Display the final results to the console without specifying a country
+Inputs:
+    :params: df -- filtered data frame of other ranked series
+    :params: term -- short or long term. Only affect the logging
+    :params: home_dir -- the home directory for the function to find the right directory to save data
+    :params: topn -- how many results to display in the final output.
+Output:
+    Results displayed in the console.
+"""
 def display_without_country(df, term, home_dir, topn = 10):
     trade_parter = get_trade_partner().set_index("Country")[["Top exported products", 'Top imported products']]
 
@@ -162,9 +244,23 @@ def display_without_country(df, term, home_dir, topn = 10):
 
     df.to_csv(f"{run_time}_general_{term}.csv", header = True, index = True)
 
-    # TO DO: add plot
+    # plot results
     plot_raw_data(home_dir, df.index[:10])
 
+"""
+Function:
+    app
+Purpose:
+    A function to wrap all the logics of the application. For details, please refer to the README.md.
+Inputs:
+    :params: home_dir -- the home directory for the function to find the right directory to save data
+    :params: perspective_country (nullable) -- The country to find the best trading partners countries for. 
+                                                Leave it null to find the best partners in general.
+    :params: weighting (nullable) -- None for computing equal weighted average of rank or input a dictionary of weighting
+    :params: topn -- how many results to display in the final output.
+Output:
+    Results displayed in the console.
+"""
 def app(home_dir, perspective_country = None, weighting = None, topn = 10):
     # load insights
     dfs = [pd.read_csv(f"{home_dir}/insights/{directory}/latest.csv", index_col = 0) for directory in insights_dir]

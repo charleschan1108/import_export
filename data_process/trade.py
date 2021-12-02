@@ -1,3 +1,21 @@
+"""
+data_process/trade.py
+Author: 
+    Charles Chan, Hsueh-i Lu, Rui Pan, Yaheng Wang, Yigang Zhou, Jiaqi Song
+
+Description: 
+    The script contains get_rate_of_change and process_trade function to process 
+    quarter trade (export/import/net trade) data.
+
+Import by:
+    data_process/__init__.py
+
+Import:
+    assign_rank from utils.py
+    get_country_iso_code from utils.py
+    get_latest_file from utils.py
+"""
+
 import pandas as pd
 import numpy as np
 
@@ -5,6 +23,20 @@ from .utils import assign_rank
 from .utils import get_latest_file
 from .utils import get_country_iso_code
 
+
+"""
+Function:
+    get_rate_of_change
+Purpose:
+    To transform the raw data by pivoting the table before calculating rate of change for 
+    the value of import/export/net trade in goods for each country.
+Inputs:
+    :params: df -- raw data filtered by subject (exp/imp/ntrade)
+    :params: measure -- suffix for the naming of the output in the data frame
+    :params: verbose -- whether to print data frame for debugging purposes
+Output:
+    A pandas data frame that contains rate of change of value of import/export/net trade in goods.
+"""
 def get_rate_of_change(df, measure, verbose = False):
     pivot = df.pivot(index = "TIME", columns = "LOCATION", values = "Value")
     latest_chg = pivot.pct_change(fill_method = None).ffill()
@@ -28,6 +60,19 @@ def get_rate_of_change(df, measure, verbose = False):
 
     return chg
 
+"""
+Function:
+    process_trade
+Purpose:
+    First filter and split the raw data into import_df, export_df and net_df.
+    Then apply get_rate_of_change to each of the data frames
+    Finally, combine the three data frames and assign rank according to the rate
+    of change..
+Inputs:
+    :params: home_dir -- the home directory for the function to find the right directory to save data
+Output:
+    a csv saved in the insights/trade directory.
+"""
 def process_trade(home_dir):
     directory = f"{home_dir}/data/trade"
     path = get_latest_file(directory)

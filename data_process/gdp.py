@@ -1,3 +1,20 @@
+"""
+data_process/gdp.py
+Author: 
+    Charles Chan, Hsueh-i Lu, Rui Pan, Yaheng Wang, Yigang Zhou, Jiaqi Song
+
+Description: 
+    The script contains process_gdp function to process quarter gdp data.
+
+Import by:
+    data_process/__init__.py
+
+Import:
+    assign_rank from utils.py
+    get_country_iso_code from utils.py
+    get_latest_file from utils.py
+"""
+
 import pandas as pd
 import numpy as np
 
@@ -5,6 +22,17 @@ from .utils import get_latest_file
 from .utils import get_country_iso_code
 from .utils import assign_rank
 
+"""
+Function:
+    process_gdp
+Purpose:
+    Read csv stored at data/gdp and compute the rate of change of gdp quarterly and yearly.
+    Then, assign rank according to the rate of change.
+Inputs:
+    :params: home_dir -- the home directory for the function to find the right directory to save data
+Output:
+    a csv saved in the insights/gdp directory.
+"""
 def process_gdp(home_dir):
     directory = f"{home_dir}/data/gdp"
     path = get_latest_file(directory)

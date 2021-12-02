@@ -1,3 +1,18 @@
+"""
+data_process/covid.py
+Author: 
+    Charles Chan, Hsueh-i Lu, Rui Pan, Yaheng Wang, Yigang Zhou, Jiaqi Song
+
+Description: 
+    The script contains process_covid function to process covid data (death, case, vaccine).
+
+Import by:
+    data_process/__init__.py
+
+Import:
+    assign_rank from utils.py
+"""
+
 import pandas as pd
 import numpy as np
 
@@ -5,6 +20,7 @@ from datetime import datetime
 
 from .utils import assign_rank
 
+# Month to quarter mapping
 qmap = {
     "01": "Q1",
     "02": "Q1",
@@ -20,6 +36,19 @@ qmap = {
     "12": "Q4"
 }
 
+
+"""
+Function:
+    process_covid
+Purpose:
+    Read csv stored at data/covid and compute the rate of change of case and death number and also
+    the vaccinated rate with the formula of people_fully_vaccinated / population.
+    Then, assign rank according to the rate of changes.
+Inputs:
+    :params: home_dir -- the home directory for the function to find the right directory to save data
+Output:
+    a csv saved in the insights/covid directory.
+"""
 def process_covid(home_dir):
     stat_columns = ["total_cases", 
                     "total_deaths", 

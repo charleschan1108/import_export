@@ -1,3 +1,20 @@
+"""
+data_process/unemployment.py
+Author: 
+    Charles Chan, Hsueh-i Lu, Rui Pan, Yaheng Wang, Yigang Zhou, Jiaqi Song
+
+Description: 
+    The script contains process_unemployment and pct_chg_and_merge function to 
+    process quarterly and yearly unemployment data.
+Import by:
+    data_process/__init__.py
+
+Import:
+    assign_rank from utils.py
+    get_country_iso_code from utils.py
+    get_latest_file from utils.py
+"""
+
 import pandas as pd
 import numpy as np
 
@@ -5,6 +22,19 @@ from .utils import get_latest_file
 from .utils import get_country_iso_code
 from .utils import assign_rank
 
+
+"""
+Function:
+    pct_chg_and_merge
+Purpose:
+    Compute the rate of change of the filtered raw data and merge with the original
+    series.
+Inputs:
+    :params: home_dir -- the home directory for the function to find the right directory to save data
+Output:
+    A pandas data frame that contains the rate of change of unemployment rate 
+    and the unemployment rate.
+"""
 def pct_chg_and_merge(df, measure):
     # pivot data and apply pct_change
     pivot = df.pivot(index = "TIME", columns = "LOCATION", values = "Value")
@@ -18,6 +48,19 @@ def pct_chg_and_merge(df, measure):
 
     return latest_chg
 
+"""
+Function:
+    process_unemployment
+Purpose:
+    Read csv stored at data/unemployment and split into quarterly and yearly data
+    before calling pct_chg_and_merge to compute the rate of change of 
+    quarterly and yearly gdp.
+    Then, assign rank according to the rate of change.
+Inputs:
+    :params: home_dir -- the home directory for the function to find the right directory to save data
+Output:
+    a csv saved in the insights/unemployment directory.
+"""
 def process_unemployment(home_dir):
     # get latest file
     directory = f"{home_dir}/data/unemployment"

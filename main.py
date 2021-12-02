@@ -1,3 +1,30 @@
+"""
+main.py
+Author: 
+    Charles Chan, Hsueh-i Lu, Rui Pan, Yaheng Wang, Yigang Zhou, Jiaqi Song
+
+Description: 
+    This script here for handling the parameters for the whole application and return results accordingly.
+    See README.md for more details.
+
+Imports:
+    from data_ingestion import download_trade_data
+    from data_ingestion import download_unemployment_rate
+    from data_ingestion import scrape_trade_partners
+    from data_ingestion import crawl_inflation_data
+    from data_ingestion import download_gdp
+    from data_ingestion import download_covid_data
+    from data_ingestion import crawl_country_code
+    from data_process import process_trade
+    from data_process import process_covid
+    from data_process import process_gdp
+    from data_process import process_inflation
+    from data_process import process_unemployment
+
+Import by:
+    Nil
+"""
+
 import argparse
 import os
 
@@ -26,6 +53,17 @@ from config import weighting
 # if refresh & process
 # display
 
+"""
+Function:
+    parse_args
+Purpose:
+    Parse the argument specified in the command to run this script using 
+    argparse module.
+Inputs:
+    Nil
+Output:
+    arguments
+"""
 def parse_args():
     parser = argparse.ArgumentParser(description = "Import/Export trade recommender")
     parser.add_argument("--refresh", default=0, help = "Whether to re-crawl and re-process data.", type = int)
@@ -35,6 +73,16 @@ def parse_args():
 
     return parser.parse_args()
 
+"""
+Function:
+    main
+Purpose:
+    The main function of the application. Run the application according to the specified parameters.
+Inputs:
+    Nil
+Output:
+    Results displayed in the console and insights saved at the home directory.
+"""
 def main():
     # parse argument
     args = parse_args()
