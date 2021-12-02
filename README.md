@@ -149,7 +149,7 @@ The above example assume user put equal weight on factors:
 * vaccinated rate (people_fully_vacinated / population)
 * GDP growth
 * Inflation rate
-* Value of export/import/net trade in good
+* Value of export/import/net trade in goods
 * Net trade / GDP
 * Unemployment rate
 
