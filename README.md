@@ -6,7 +6,7 @@ This package is designed to support companies to make informed decision pertaini
 It is better to create a virtual environment for this project since it will not affect your existing python environment.
 
 ### Step 0: Download ChromeDriver
-Go to https://chromedriver.chromium.org/ and download the suitable version chromedriver for your computer. And place it in the home directory of this repo.
+Go to https://chromedriver.chromium.org/ and download the suitable version chromedriver for your computer. And place it in the home directory of this repo after step 1.
 
 ### Step 1: Clone the repository and get the source code ready in your computer
 ```
