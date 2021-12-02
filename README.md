@@ -43,7 +43,7 @@ Currently, the library support businesses to answer two questions (2 application
 2. In general, which country is the best partners for trade of goods and services during and after the pandemic?
 
 based on different types of data:
-* Covid (death, case and vaccination)
+* Covid data (death, case and vaccination)
 * Macroeconomics data (gdp, unemployment rate, inflation rate, value of export/import/net trade in goods)
 * Countries trade profile
 
