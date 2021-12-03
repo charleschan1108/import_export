@@ -4,7 +4,7 @@ This package is designed to support companies from no matter what countries to m
 
 ## Tutorial
 
-An introduction of the package is given in this video (https://drive.google.com/drive/folders/1oBvMWMxe7AcZn7EdZcClA3LyFb59gjV6?usp=sharing). You can follow through to know more.
+An introduction of the package is given in this video (https://youtu.be/tvCuLU0Mk50). You can follow through to know more.
 
 ## Set up
 It is better to create a virtual environment for this project since it will not affect your existing python environment.
